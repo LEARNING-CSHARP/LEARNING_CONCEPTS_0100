@@ -29,6 +29,7 @@
 			// برای دوره مقدماتی
 			// در زبان سی‌شارپ، هرگاه متغیری را در داخل یک فانکشن تعریف نماییم، اصطلاحا به آن متغیر محلی اطلاق می‌شود
 			// در زبان سی‌شارپ، هرگاه یک متغیر محلی تعریف نماییم، مطلقا مقدار اولیه ندارد
+			// قرار می‌گیرند Stack تعریف می‌شوند، در داخل function تمامی متغیرهایی که در داخل
 
 			// **********
 			// Variable Declaration
@@ -230,7 +231,7 @@
 
 			//while (intIndex <= 10)
 			//{
-			//	Console.WriteLine("Hello, World!");
+			//	System.Console.WriteLine("Hello, World!");
 
 			//	intIndex++;
 			//}
@@ -252,7 +253,9 @@
 
 			//// Target: "Some Text10"
 
-			//string str2 = str1 + 10;
+			//string str2 = str1 + (10).ToString();
+
+			//string str3 = str1 + 10;
 			// **********
 
 			// **********
@@ -282,6 +285,7 @@
 
 			//while (intIndex <= intNumberCount)
 			//{
+			//	// [1] -> 
 			//	string strMessage = "[" + intIndex + "] -> ";
 
 			//	System.Console.Write(strMessage);
@@ -292,10 +296,10 @@
 			//	int intNumber =
 			//		System.Convert.ToInt32(strNumber);
 
-			//	//int intNumber =
-			//	//	System.Convert.ToInt32(System.Console.ReadLine());
-
 			//	intSum += intNumber;
+
+			//	//intSum +=
+			//	//	System.Convert.ToInt32(System.Console.ReadLine());
 
 			//	intIndex++;
 			//}
@@ -385,6 +389,8 @@
 			//		break;
 			//	}
 
+			//	// اختیاری است default دستور
+			//	// معنی:‌ در غیر این صورت
 			//	default:
 			//	{
 			//		System.Console.WriteLine("Not a valid input!");
@@ -443,7 +449,7 @@
 			//do
 			//{
 			//	System.Console.WriteLine("Hello, World!");
-			//} while (intNumber < 5); // ; -> is requred!
+			//} while (intNumber < 5); // ; -> is required!
 			// **********
 
 			// **********
@@ -510,25 +516,25 @@
 			// برخورد نماید
 			// به ابتدای آخرین حلقه‌ای که در داخل آن قرار دارد وارد شده و شرط را تست می‌کند
 
-			//int intIndex = 1;
+			int intIndex = 1;
 
-			//while (intIndex <= 10)
-			//{
-			//	if (intIndex == 3)
-			//	{
-			//		intIndex = 6;
-			//		continue;
-			//	}
+			while (intIndex <= 10)
+			{
+				if (intIndex == 3)
+				{
+					intIndex = 6;
+					continue;
+				}
 
-			//	if (intIndex == 8)
-			//	{
-			//		break;
-			//	}
+				if (intIndex == 8)
+				{
+					break;
+				}
 
-			//	System.Console.WriteLine(">" + intIndex);
+				System.Console.WriteLine(">" + intIndex);
 
-			//	intIndex++;
-			//}
+				intIndex++;
+			}
 			// **********
 
 			// **********
