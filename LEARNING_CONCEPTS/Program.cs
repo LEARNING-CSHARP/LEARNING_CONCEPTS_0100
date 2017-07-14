@@ -68,6 +68,7 @@
 			// **********
 			//int X = 10;
 
+			// به متغیر ایکس پنج واحد اضافه کن
 			//X = X + 5;
 
 			//X += 5;
@@ -101,23 +102,25 @@
 			// **********
 			// Primitive (Value) Types
 
-			// byte => byt
-			// int => int
-			// long => lng
+			// byte => Type Prefix => byt
+			// int => Type Prefix => int
+			// long => Type Prefix => lng
 
-			// short => sht
-			// uint
-			// ulong
+			// short => Type Prefix => sht
+			// uint => Type Prefix => uint
+			// ulong => Type Prefix => ulng
 
-			// single => sng
-			// double => dbl
-			// decimal => dec
+			// single => Type Prefix => sng
+			// double => Type Prefix => dbl
+			// decimal => Type Prefix => dec
 
-			// char => chr
-			// bool => bln
+			// char => Type Prefix => chr
+			// bool => Type Prefix => bln
 			// **********
 
-			// تمامی متغیرهایی که تعریف می‌کنیم باید با معنی باشند و نباید از محفف در نام آنها استفاده کنیم
+			// تمامی متغیرهایی که تعریف می‌کنیم باید با معنی باشند
+			// و نباید از محفف در نام آنها استفاده کنیم
+			// و نیز نباید به هیچ عنوان از نام‌گذاری به روش پینگلیش استفاده کنیم
 			//long X;
 			//long FirstNumber; // Pascal Case
 			//long lngFirstNumber; // Type Prefix
@@ -155,7 +158,7 @@
 			// 2
 
 			// X = Y; // Compiler Error!
-			//X = (int)Y; // Explicit Casting!
+			//X = (int)Y; // Explicit Casting! به صراحت
 
 			// 3
 
@@ -216,6 +219,24 @@
 			// **********
 
 			// **********
+			//if(f() && g())
+			//{
+			//}
+
+			//if(f() || g())
+			//{
+			//}
+
+			//if(f() & g())
+			//{
+			//}
+
+			//if(f() | g())
+			//{
+			//}
+			// **********
+
+			// **********
 			//int intIndex = 1;
 
 			//while (intIndex <= 10)
@@ -243,27 +264,29 @@
 			//string strFirstName = "Dariush";
 			//string strLastName = "Tasdighi";
 
-			//// Target: "Dariush Tasdighi"
-
 			//string strFullName = strFirstName + " " + strLastName;
+
+			//// strFullName => "Dariush Tasdighi"
 			// **********
 
 			// **********
 			//string str1 = "Some Text";
-
-			//// Target: "Some Text10"
 
 			//string str2 = str1 + (10).ToString();
 
+			//// str2 => "Some Text10"
+
 			//string str3 = str1 + 10;
+
+			//// str3 => "Some Text10"
 			// **********
 
 			// **********
 			//string str1 = "Some Text";
 
-			//// Target: "10Some Text"
-
 			//string str2 = 10 + str1;
+
+			//// str2 => "10Some Text"
 			// **********
 			// **********
 			// **********
@@ -478,6 +501,29 @@
 			// **********
 
 			// **********
+			// متغیرهای محلی
+
+			//if(1 == 1)
+			//{
+			//	// ...
+
+			//	int intIndex = 1;
+
+			//	// ...
+			//}
+
+
+
+			//{
+			//	// ...
+
+			//	int intIndex = 1;
+
+			//	// ...
+			//}
+			// **********
+
+			// **********
 			// Snippet
 			// **********
 
@@ -516,25 +562,25 @@
 			// برخورد نماید
 			// به ابتدای آخرین حلقه‌ای که در داخل آن قرار دارد وارد شده و شرط را تست می‌کند
 
-			int intIndex = 1;
+			//int intIndex = 1;
 
-			while (intIndex <= 10)
-			{
-				if (intIndex == 3)
-				{
-					intIndex = 6;
-					continue;
-				}
+			//while (intIndex <= 10)
+			//{
+			//	if (intIndex == 3)
+			//	{
+			//		intIndex = 6;
+			//		continue;
+			//	}
 
-				if (intIndex == 8)
-				{
-					break;
-				}
+			//	if (intIndex == 8)
+			//	{
+			//		break;
+			//	}
 
-				System.Console.WriteLine(">" + intIndex);
+			//	System.Console.WriteLine(">" + intIndex);
 
-				intIndex++;
-			}
+			//	intIndex++;
+			//}
 			// **********
 
 			// **********
@@ -562,7 +608,8 @@
 			//string strLastName = "Tasdighi";
 
 			//string strFullName =
-			//	string.Format("{0} {1}", strFirstName, strLastName);
+			//	string.Format("{0} {1}",
+			//	strFirstName, strLastName);
 
 			//System.Console.WriteLine(strFullName);
 			// **********
