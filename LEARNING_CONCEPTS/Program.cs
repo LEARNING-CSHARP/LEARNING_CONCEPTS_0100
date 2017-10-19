@@ -512,8 +512,6 @@
 			//	// ...
 			//}
 
-
-
 			//{
 			//	// ...
 
@@ -557,6 +555,33 @@
 			//// F
 			////...
 
+			//while (1 == 1)
+			//{
+			//	//...
+			//	while (2 == 2)
+			//	{
+			//		//...
+			//		while (3 == 3)
+			//		{
+			//			//...
+			//			while (4 == 4)
+			//			{
+			//				//...
+			//				while (5 == 5)
+			//				{
+			//					//...
+			//					if (6 == 6)
+			//					{
+			//						goto SomeLabel;
+			//					}
+			//				}
+			//			}
+			//		}
+			//	}
+			//}
+
+			//SomeLabel:
+
 			// هرگاه کامپایلر به دستور
 			// continue
 			// برخورد نماید
@@ -587,31 +612,38 @@
 			//int A = 10;
 			//int B = 20;
 			//int C = 30;
+			//string strResult;
 
-			// Target: "A = 10, B = 20, C = 30"
+			//// Target: "A = 10, B = 20, C = 30"
 
-			//string strResult = "A = " + A + ", B = " + B + ", C = " + C;
+			//strResult = "A = " + A + ", B = " + B + ", C = " + C;
 
-			//string strResult =
+			//strResult =
 			//	string.Format("A = {0}, B = {1}, C = {2}", A, B, C);
 
-			//string strResult =
+			//strResult =
 			//	string.Format("A = {1}, B = {0}, C = {1}", A, B, C);
 
-			// Target: "A = 20, B = 10, C = 20"
+			//// Target: "A = 20, B = 10, C = 20"
 
 			//System.Console.WriteLine(strResult);
 			// **********
 
 			// **********
+			//string strFullName;
 			//string strFirstName = "Dariush";
 			//string strLastName = "Tasdighi";
 
-			//string strFullName =
+			//strFullName =
+			//	strFirstName + " " + strLastName;
+
+			//strFullName =
 			//	string.Format("{0} {1}",
 			//	strFirstName, strLastName);
 
 			//System.Console.WriteLine(strFullName);
+
+			//System.Console.WriteLine("{0} {1}", strFirstName, strLastName);
 			// **********
 
 			// **********
