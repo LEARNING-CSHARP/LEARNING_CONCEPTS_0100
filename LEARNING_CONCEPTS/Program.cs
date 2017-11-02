@@ -44,7 +44,7 @@
 			// **********
 			//int X, Y;
 
-			//Y = X + 10;
+			//Y = X + 10; // (=) -> (Assignment)
 			// **********
 
 			// **********
@@ -61,9 +61,18 @@
 			//int Y = X + 5;
 			// **********
 
+			// **********
+			//int X;
+			//X = 10;
+			//int Y;
+			//Y = X + 5;
+			// **********
+
 			// X + Y =>
 			// + Operator عملگر
 			//	X, Y Operand عملوند
+
+			// Operator: + - * / %
 
 			// **********
 			//int X = 10;
@@ -100,7 +109,7 @@
 			// **********
 
 			// **********
-			// Primitive (Value) Types
+			// Primitive (Value) Types:
 
 			// byte => Type Prefix => byt
 			// int => Type Prefix => int
@@ -118,12 +127,33 @@
 			// bool => Type Prefix => bln
 			// **********
 
+			// **********
+			// Pascal Case => FirstNumber
+			// Camel Case  => firstNumber
+			// Upper Case  => FIRST_NUMBER
+			// **********
+
+			// **********
+			// استاندارد قدیم
+
 			// تمامی متغیرهایی که تعریف می‌کنیم باید با معنی باشند
 			// و نباید از محفف در نام آنها استفاده کنیم
+			// و دیکته آنها باید درست و با دقت نوشته شود
 			// و نیز نباید به هیچ عنوان از نام‌گذاری به روش پینگلیش استفاده کنیم
 			//long X;
 			//long FirstNumber; // Pascal Case
 			//long lngFirstNumber; // Type Prefix
+			// **********
+
+			// **********
+			// استاندارد جدید
+
+			// تمامی متغیرهایی که تعریف می‌کنیم باید با معنی باشند
+			// و نباید از محفف در نام آنها استفاده کنیم
+			// و دیکته آنها باید درست و با دقت نوشته شود
+			// و نیز نباید به هیچ عنوان از نام‌گذاری به روش پینگلیش استفاده کنیم
+			//long firstNumber; // Camel Case
+			// **********
 
 			// **********
 			// هر متغیری از هر جنسی را می‌توان در داخل متغیری از همان جنس قرار داد
@@ -248,6 +278,23 @@
 			// **********
 
 			// **********
+			// با استاندارد جدید
+
+			//int index = 1;
+
+			//while (index <= 10)
+			//{
+			//	// Do Something(s)
+
+			//	index++;
+			//}
+			// **********
+
+			// با استفاده از دستورات فوق، ۱۰ بار دستورات
+			// Do Something(s)
+			// اجرا می‌شود
+
+			// **********
 			//int intIndex = 1;
 
 			//while (intIndex <= 10)
@@ -259,14 +306,31 @@
 			// **********
 
 			// **********
+			// با استاندارد جدید
+
+			//int index = 1;
+
+			//while (index <= 10)
+			//{
+			//	System.Console.WriteLine("Hello, World!");
+
+			//	index++;
+			//}
+			// **********
+
+			// با استفاده از دستورات فوق، ۱۰ بار متن
+			// Hello, World!
+			// در صفحه نمایش داده می‌شود
+
 			// **********
 			// **********
-			//string strFirstName = "Dariush";
-			//string strLastName = "Tasdighi";
+			// **********
+			//string firstName = "Dariush";
+			//string lastName = "Tasdighi";
 
-			//string strFullName = strFirstName + " " + strLastName;
+			//string fullName = firstName + " " + lastName;
 
-			//// strFullName => "Dariush Tasdighi"
+			// fullName => "Dariush Tasdighi"
 			// **********
 
 			// **********
@@ -284,11 +348,27 @@
 			// **********
 			//string str1 = "Some Text";
 
-			//string str2 = 10 + str1;
+			//string str2 = (10).ToString() + str1; // قبلا مجبور بودیم
+
+			//string str2 = 10 + str1; // در نسخه‌های جدید مشکلی ندارد
 
 			//// str2 => "10Some Text"
 			// **********
 			// **********
+			// **********
+
+			// **********
+			System.Console.Write("What is your first name: ");
+			string firstName = System.Console.ReadLine();
+
+			System.Console.Write("What is your last name: ");
+			string lastName = System.Console.ReadLine();
+
+			//string fullName = firstName + "" + lastName; // Wrong Usage!
+
+			string fullName = firstName + " " + lastName;
+
+			System.Console.WriteLine(fullName);
 			// **********
 
 			// **********
