@@ -358,90 +358,105 @@
 			// **********
 
 			// **********
-			System.Console.Write("What is your first name: ");
-			string firstName = System.Console.ReadLine();
+			//System.Console.Write("What is your first name: ");
+			//string firstName = System.Console.ReadLine();
 
-			System.Console.Write("What is your last name: ");
-			string lastName = System.Console.ReadLine();
+			//System.Console.Write("What is your last name: ");
+			//string lastName = System.Console.ReadLine();
 
-			//string fullName = firstName + "" + lastName; // Wrong Usage!
+			////string fullName = firstName + lastName; // Wrong Usage!
 
-			string fullName = firstName + " " + lastName;
+			////string fullName = firstName + "" + lastName; // Wrong Usage!
 
-			System.Console.WriteLine(fullName);
+			////string fullName = firstName + " " + lastName;
+
+			////string fullName = string.Format("{0} {1}", firstName, lastName);
+
+			////string fullName =
+			////	string.Format("{0} {1}", firstName, lastName);
+
+			//string fullName = $"{ firstName } {lastName}";
+
+			//System.Console.WriteLine(fullName);
 			// **********
 
 			// **********
 			//System.Console.Write("How many numbers do you have: ");
 
-			////string strNumberCount = System.Console.ReadLine();
-
-			//string strNumberCount =
+			//string numberCountString =
 			//	System.Console.ReadLine();
 
-			//int intNumberCount =
-			//	System.Convert.ToInt32(strNumberCount);
+			//int numberCount =
+			//	System.Convert.ToInt32(numberCountString);
 
-			//int intSum = 0;
+			//int sum = 0;
 
-			//int intIndex = 1;
+			//int index = 1;
 
-			//while (intIndex <= intNumberCount)
+			//while (index <= numberCount)
 			//{
 			//	// [1] -> 
-			//	string strMessage = "[" + intIndex + "] -> ";
+			//	string message = $"[{ index }]: ";
 
-			//	System.Console.Write(strMessage);
+			//	System.Console.Write(message);
 
-			//	string strNumber =
+			//	string numberString =
 			//		System.Console.ReadLine();
 
-			//	int intNumber =
-			//		System.Convert.ToInt32(strNumber);
+			//	int number =
+			//		System.Convert.ToInt32(numberString);
 
-			//	intSum += intNumber;
+			//	sum += number;
 
-			//	//intSum +=
+			//	//sum +=
 			//	//	System.Convert.ToInt32(System.Console.ReadLine());
 
-			//	intIndex++;
+			//	index++;
 			//}
 
-			//System.Console.WriteLine("The sum of these numbers is " + intSum);
+			//string result =
+			//	$"The sum of these numbers is { sum }.";
+
+			//System.Console.WriteLine(result);
 			// **********
 
 			// **********
-			//string strInput =
+			//string input =
 			//	System.Console.ReadLine();
 
-			//if (strInput == "1")
+			//if (input == "1")
 			//{
 			//	System.Console.WriteLine("10");
 			//}
+			//// اگر یک نبود
 			//else
 			//{
-			//	if (strInput == "2")
+			//	if (input == "2")
 			//	{
 			//		System.Console.WriteLine("20");
 			//	}
+			//	// اگر یک یا دو نبود
 			//	else
 			//	{
-			//		if (strInput == "3")
+			//		if (input == "3")
 			//		{
 			//			System.Console.WriteLine("30");
 			//		}
+			//		// اگر یک یا دو یا سه نبود
 			//		else
 			//		{
-			//			if (strInput == "4")
+			//			if (input == "4")
 			//			{
 			//				System.Console.WriteLine("40");
 			//			}
+			//			// اگر یک یا دو یا سه یا چهار نبود
 			//			else
 			//			{
-			//				if (strInput == "5")
+			//				if (input == "5")
 			//				{
 			//					System.Console.WriteLine("50");
 			//				}
+			//				// اگر یک یا دو یا سه یا چهار یا پنج نبود
 			//				else
 			//				{
 			//					System.Console.WriteLine("Not a valid input!");
@@ -453,10 +468,10 @@
 			// **********
 
 			// **********
-			//string strInput =
+			//string input =
 			//	System.Console.ReadLine();
 
-			//switch (strInput)
+			//switch (input)
 			//{
 			//	case "1":
 			//	{
@@ -503,10 +518,10 @@
 			// **********
 
 			// **********
-			//string strInput =
+			//string input =
 			//	System.Console.ReadLine();
 
-			//switch (strInput)
+			//switch (input)
 			//{
 			//	// خاکبرداری
 			//	case "1":
@@ -542,9 +557,20 @@
 			// **********
 
 			// **********
-			//int intNumber = 10;
+			//// ...
+			//if(1 == 1)
+			//{
+			//	goto SomeLable;
+			//}
+			//// ...
+			//SomeLable:
+			//// ...
+			// **********
 
-			//while (intNumber < 5)
+			// **********
+			//int number = 10;
+
+			//while (number < 5)
 			//{
 			//	System.Console.WriteLine("Hello, World!");
 			//}
@@ -552,7 +578,8 @@
 			//do
 			//{
 			//	System.Console.WriteLine("Hello, World!");
-			//} while (intNumber < 5); // ; -> is required!
+			//} while (number < 5);
+			//// ; -> is required!
 			// **********
 
 			// **********
@@ -565,40 +592,76 @@
 			// **********
 
 			// **********
-			//int intIndex = 1;
+			// **********
+			// **********
+			//int index = 1;
 
-			//while (intIndex <= 10)
+			//while (index <= 10)
 			//{
 			//	// Do Something(s)!
 
-			//	intIndex++;
-			//}
-
-			//for (int intIndex = 1; intIndex <= 10; intIndex++)
-			//{
-			//	// Do Something(s)!
+			//	index++;
 			//}
 			// **********
 
 			// **********
-			// متغیرهای محلی
+			//for (int index = 1; index <= 10; index++)
+			//{
+			//	// Do Something(s)!
+			//}
+			// **********
+			// **********
+			// **********
 
+			// **********
+			// **********
+			// **********
+			// متغیر(های) محلی
+			// Local Variable(s)
+			// **********
+
+			// **********
+			//{
+			//	int index;
+
+			//	int index; // Error!
+			//}
+			// **********
+
+			// **********
+			//{
+			//	int index;
+
+			//	{
+
+			//		int index; // Error!
+
+			//	}
+
+			//}
+			// **********
+
+			// **********
 			//if(1 == 1)
 			//{
 			//	// ...
 
-			//	int intIndex = 1;
+			//	int index = 1;
 
 			//	// ...
 			//}
+			// **********
 
+			// **********
 			//{
 			//	// ...
 
-			//	int intIndex = 1;
+			//	int index = 1;
 
 			//	// ...
 			//}
+			// **********
+			// **********
 			// **********
 
 			// **********
@@ -609,7 +672,7 @@
 			// هرگاه کامپایلر به دستور
 			// break
 			// برخورد نماید
-			// از آخرین حلقه‌ای که در داخل آن قرار دارد خارج می‌شود
+			// از آخرین (درونی‌ترین) حلقه‌ای که در داخل آن قرار دارد خارج می‌شود
 
 			////...
 			//// A
@@ -634,7 +697,9 @@
 			//}
 			//// F
 			////...
+			// **********
 
+			// **********
 			//while (1 == 1)
 			//{
 			//	//...
@@ -661,69 +726,60 @@
 			//}
 
 			//SomeLabel:
+			// **********
 
+			// **********
 			// هرگاه کامپایلر به دستور
 			// continue
 			// برخورد نماید
 			// به ابتدای آخرین حلقه‌ای که در داخل آن قرار دارد وارد شده و شرط را تست می‌کند
 
-			//int intIndex = 1;
+			//int index = 1;
 
-			//while (intIndex <= 10)
+			//while (index <= 10)
 			//{
-			//	if (intIndex == 3)
+			//	if (index == 3)
 			//	{
-			//		intIndex = 6;
+			//		index = 6;
 			//		continue;
 			//	}
 
-			//	if (intIndex == 8)
+			//	if (index == 8)
 			//	{
 			//		break;
 			//	}
 
-			//	System.Console.WriteLine(">" + intIndex);
+			//	System.Console.WriteLine($"> { index }");
 
-			//	intIndex++;
+			//	index++;
 			//}
 			// **********
 
 			// **********
-			//int A = 10;
-			//int B = 20;
-			//int C = 30;
-			//string strResult;
+			//int a = 10;
+			//int b = 20;
+			//int c = 30;
+			//string result;
 
 			//// Target: "A = 10, B = 20, C = 30"
 
-			//strResult = "A = " + A + ", B = " + B + ", C = " + C;
+			//result = "A = " + a + ", B = " + b + ", C = " + c;
 
-			//strResult =
-			//	string.Format("A = {0}, B = {1}, C = {2}", A, B, C);
+			//result =
+			//	string.Format("A = {0}, B = {1}, C = {2}", a, b, c);
 
-			//strResult =
-			//	string.Format("A = {1}, B = {0}, C = {1}", A, B, C);
+			//result =
+			//	string.Format("A = {1}, B = {0}, C = {1}", a, b, c);
 
 			//// Target: "A = 20, B = 10, C = 20"
 
-			//System.Console.WriteLine(strResult);
-			// **********
+			//result =
+			//	string.Format("A = {1}, B = {0}, C = {1}", a); // Compile OK! but! Runtime Error!
 
-			// **********
-			//string strFullName;
-			//string strFirstName = "Dariush";
-			//string strLastName = "Tasdighi";
+			//result =
+			//	$"A = { a }, B = { b }, C = { c }";
 
-			//strFullName =
-			//	strFirstName + " " + strLastName;
-
-			//strFullName =
-			//	string.Format("{0} {1}",
-			//	strFirstName, strLastName);
-
-			//System.Console.WriteLine(strFullName);
-
-			//System.Console.WriteLine("{0} {1}", strFirstName, strLastName);
+			//System.Console.WriteLine(result);
 			// **********
 
 			// **********
@@ -732,25 +788,25 @@
 			// **********
 
 			// **********
-			//bool blnResult = true;
+			//bool result = true;
 
 			//// دستور ذیل حرفه‌ای نیست
-			//if (blnResult == true)
+			//if (result == true)
 			//{
 			//}
 
 			//// دستور ذیل حرفه‌ای است
-			//if (blnResult)
+			//if (result)
 			//{
 			//}
 
 			//// دستور ذیل حرفه‌ای نیست
-			//if (!blnResult)
+			//if (!result)
 			//{
 			//}
 
 			//// دستور ذیل حرفه‌ای است
-			//if (blnResult == false)
+			//if (result == false)
 			//{
 			//}
 			// **********
