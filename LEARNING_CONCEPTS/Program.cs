@@ -153,6 +153,7 @@
 			// و دیکته آنها باید درست و با دقت نوشته شود
 			// و نیز نباید به هیچ عنوان از نام‌گذاری به روش پینگلیش استفاده کنیم
 			//long firstNumber; // Camel Case
+			//long firstNumberLong; // Camel Case
 			// **********
 
 			// **********
@@ -178,19 +179,20 @@
 			// 2. می توان به شرط آنکه مسوولیت آن را بپذیریم
 			// 3. مطلقا نمی‌شود
 
-			// 1
+			// (1)
+
 			//int X = 10;
 			//long Y = 20;
 
 			// Implicit = ضمنی = تلویحی
 			//Y = X; // Implicit Casting!
 
-			// 2
+			// (2)
 
 			// X = Y; // Compiler Error!
 			//X = (int)Y; // Explicit Casting! به صراحت
 
-			// 3
+			// (3)
 
 			//int X = 123;
 			//string S = "123";
@@ -249,6 +251,8 @@
 			// **********
 
 			// **********
+			// **********
+			// **********
 			//if(f() && g())
 			//{
 			//}
@@ -256,7 +260,22 @@
 			//if(f() || g())
 			//{
 			//}
+			// **********
 
+			// **********
+			//bool fResult = f();
+			//bool gResult = g(); 
+
+			//if(fResult || gResult)
+			//{
+			//}
+
+			//if(fResult && gResult)
+			//{
+			//}
+			// **********
+
+			// **********
 			//if(f() & g())
 			//{
 			//}
@@ -265,8 +284,14 @@
 			//{
 			//}
 			// **********
+			// **********
+			// **********
 
 			// **********
+			// **********
+			// **********
+			// با استاندارد قدیم
+
 			//int intIndex = 1;
 
 			//while (intIndex <= 10)
@@ -288,6 +313,8 @@
 
 			//	index++;
 			//}
+			// **********
+			// **********
 			// **********
 
 			// با استفاده از دستورات فوق، ۱۰ بار دستورات
@@ -295,6 +322,10 @@
 			// اجرا می‌شود
 
 			// **********
+			// **********
+			// **********
+			// با استاندارد قدیم
+
 			//int intIndex = 1;
 
 			//while (intIndex <= 10)
@@ -316,6 +347,8 @@
 
 			//	index++;
 			//}
+			// **********
+			// **********
 			// **********
 
 			// با استفاده از دستورات فوق، ۱۰ بار متن
@@ -364,18 +397,20 @@
 			//System.Console.Write("What is your last name: ");
 			//string lastName = System.Console.ReadLine();
 
-			////string fullName = firstName + lastName; // Wrong Usage!
+			////string fullName = "Full Name: " + firstName + lastName; // Wrong Usage!
 
-			////string fullName = firstName + "" + lastName; // Wrong Usage!
+			////string fullName = "Full Name: " + firstName + "" + lastName; // Wrong Usage!
 
-			////string fullName = firstName + " " + lastName;
+			////string fullName = "Full Name: " + firstName + " " + lastName;
 
-			////string fullName = string.Format("{0} {1}", firstName, lastName);
+			////string fullName = string.Format("Full Name: {0} {1}", firstName, lastName);
 
 			////string fullName =
-			////	string.Format("{0} {1}", firstName, lastName);
+			////	string.Format("Full Name: {0} {1}",
+			////	firstName, lastName);
 
-			//string fullName = $"{ firstName } {lastName}";
+			//string fullName =
+			//	$"Full Name: { firstName } {lastName}";
 
 			//System.Console.WriteLine(fullName);
 			// **********
@@ -395,11 +430,12 @@
 
 			//while (index <= numberCount)
 			//{
-			//	// [1] -> 
-			//	string message = $"[{ index }]: ";
+			//	// [1] ->
+			//	string message = $"[{ index }] -> ";
 
 			//	System.Console.Write(message);
 
+			//	// **********
 			//	string numberString =
 			//		System.Console.ReadLine();
 
@@ -407,9 +443,12 @@
 			//		System.Convert.ToInt32(numberString);
 
 			//	sum += number;
+			//	// **********
 
+			//	// **********
 			//	//sum +=
 			//	//	System.Convert.ToInt32(System.Console.ReadLine());
+			//	// **********
 
 			//	index++;
 			//}
@@ -568,6 +607,35 @@
 			// **********
 
 			// **********
+			//while (1 == 1)
+			//{
+			//	//...
+			//	while (2 == 2)
+			//	{
+			//		//...
+			//		while (3 == 3)
+			//		{
+			//			//...
+			//			while (4 == 4)
+			//			{
+			//				//...
+			//				while (5 == 5)
+			//				{
+			//					//...
+			//					if (6 == 6)
+			//					{
+			//						goto SomeLabel;
+			//					}
+			//				}
+			//			}
+			//		}
+			//	}
+			//}
+
+			//SomeLabel:
+			// **********
+
+			// **********
 			//int number = 10;
 
 			//while (number < 5)
@@ -651,16 +719,6 @@
 			//	// ...
 			//}
 			// **********
-
-			// **********
-			//{
-			//	// ...
-
-			//	int index = 1;
-
-			//	// ...
-			//}
-			// **********
 			// **********
 			// **********
 
@@ -700,39 +758,10 @@
 			// **********
 
 			// **********
-			//while (1 == 1)
-			//{
-			//	//...
-			//	while (2 == 2)
-			//	{
-			//		//...
-			//		while (3 == 3)
-			//		{
-			//			//...
-			//			while (4 == 4)
-			//			{
-			//				//...
-			//				while (5 == 5)
-			//				{
-			//					//...
-			//					if (6 == 6)
-			//					{
-			//						goto SomeLabel;
-			//					}
-			//				}
-			//			}
-			//		}
-			//	}
-			//}
-
-			//SomeLabel:
-			// **********
-
-			// **********
 			// هرگاه کامپایلر به دستور
 			// continue
 			// برخورد نماید
-			// به ابتدای آخرین حلقه‌ای که در داخل آن قرار دارد وارد شده و شرط را تست می‌کند
+			// به ابتدای آخرین (درونی‌ترین) حلقه‌ای که در داخل آن قرار دارد وارد شده و شرط آنرا تست می‌کند
 
 			//int index = 1;
 
@@ -774,7 +803,7 @@
 			//// Target: "A = 20, B = 10, C = 20"
 
 			//result =
-			//	string.Format("A = {1}, B = {0}, C = {1}", a); // Compile OK! but! Runtime Error!
+			//	string.Format("A = {1}, B = {0}, C = {1}", a); // Note: Compile OK! but Runtime Error!
 
 			//result =
 			//	$"A = { a }, B = { b }, C = { c }";
