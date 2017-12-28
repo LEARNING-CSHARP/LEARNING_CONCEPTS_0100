@@ -44,7 +44,7 @@
 			// **********
 			//int X, Y;
 
-			//Y = X + 10; // (=) -> (Assignment)
+			//Y = X + 10; // (=) -> (Assignment), Compile Error!
 			// **********
 
 			// **********
@@ -131,29 +131,32 @@
 			// Pascal Case => FirstNumber
 			// Camel Case  => firstNumber
 			// Upper Case  => FIRST_NUMBER
+			// Lower Case  => first_number
+			// **********
+
+			// **********
+			// استاندارد
+
+			// تمامی متغیرهایی که تعریف می‌کنیم باید با معنی باشند
+			// و نباید از محفف در نام آنها استفاده کنیم
+			// و دیکته آنها باید درست و با دقت نوشته شود
+			// و نیز نباید به هیچ عنوان از نام‌گذاری به روش پینگلیش استفاده کنیم
 			// **********
 
 			// **********
 			// استاندارد قدیم
 
-			// تمامی متغیرهایی که تعریف می‌کنیم باید با معنی باشند
-			// و نباید از محفف در نام آنها استفاده کنیم
-			// و دیکته آنها باید درست و با دقت نوشته شود
-			// و نیز نباید به هیچ عنوان از نام‌گذاری به روش پینگلیش استفاده کنیم
-			//long X;
-			//long FirstNumber; // Pascal Case
-			//long lngFirstNumber; // Type Prefix
+			//string strFullName; // Type Prefix: str + Pascal Case
+			//long lngFirstNumber; // Type Prefix: lng + Pascal Case
 			// **********
 
 			// **********
 			// استاندارد جدید
 
-			// تمامی متغیرهایی که تعریف می‌کنیم باید با معنی باشند
-			// و نباید از محفف در نام آنها استفاده کنیم
-			// و دیکته آنها باید درست و با دقت نوشته شود
-			// و نیز نباید به هیچ عنوان از نام‌گذاری به روش پینگلیش استفاده کنیم
 			//long firstNumber; // Camel Case
-			//long firstNumberLong; // Camel Case
+			//long firstNumberLong; // Camel Case + Type Name
+			//string fullName; // Camel Case
+			//string fullNameString; // Camel Case + Type Name
 			// **********
 
 			// **********
@@ -290,6 +293,19 @@
 			// **********
 			// **********
 			// **********
+			// Inline Condition
+			//int firstNumber = 10;
+			//int secondNumber = 20;
+
+			//int max = firstNumber > secondNumber ? firstNumber : ; ;
+			//int min = firstNumber > secondNumber ? secondNumber : firstNumber;
+			// **********
+			// **********
+			// **********
+
+			// **********
+			// **********
+			// **********
 			// با استاندارد قدیم
 
 			//int intIndex = 1;
@@ -409,8 +425,11 @@
 			////	string.Format("Full Name: {0} {1}",
 			////	firstName, lastName);
 
+			////string fullName =
+			////	$"Full Name: {firstName} {lastName}";
+
 			//string fullName =
-			//	$"Full Name: { firstName } {lastName}";
+			//	$"Full Name: { firstName } { lastName }";
 
 			//System.Console.WriteLine(fullName);
 			// **********
@@ -457,6 +476,46 @@
 			//	$"The sum of these numbers is { sum }.";
 
 			//System.Console.WriteLine(result);
+			// **********
+
+			// **********
+			//// ...
+			//if(1 == 1)
+			//{
+			//	goto SomeLable;
+			//}
+			//// ...
+			//SomeLable:
+			//// ...
+			// **********
+
+			// **********
+			//while (1 == 1)
+			//{
+			//	//...
+			//	while (2 == 2)
+			//	{
+			//		//...
+			//		while (3 == 3)
+			//		{
+			//			//...
+			//			while (4 == 4)
+			//			{
+			//				//...
+			//				while (5 == 5)
+			//				{
+			//					//...
+			//					if (6 == 6)
+			//					{
+			//						goto SomeLabel;
+			//					}
+			//				}
+			//			}
+			//		}
+			//	}
+			//}
+
+			//SomeLabel:
 			// **********
 
 			// **********
@@ -596,46 +655,6 @@
 			// **********
 
 			// **********
-			//// ...
-			//if(1 == 1)
-			//{
-			//	goto SomeLable;
-			//}
-			//// ...
-			//SomeLable:
-			//// ...
-			// **********
-
-			// **********
-			//while (1 == 1)
-			//{
-			//	//...
-			//	while (2 == 2)
-			//	{
-			//		//...
-			//		while (3 == 3)
-			//		{
-			//			//...
-			//			while (4 == 4)
-			//			{
-			//				//...
-			//				while (5 == 5)
-			//				{
-			//					//...
-			//					if (6 == 6)
-			//					{
-			//						goto SomeLabel;
-			//					}
-			//				}
-			//			}
-			//		}
-			//	}
-			//}
-
-			//SomeLabel:
-			// **********
-
-			// **********
 			//int number = 10;
 
 			//while (number < 5)
@@ -686,6 +705,12 @@
 			// **********
 			// متغیر(های) محلی
 			// Local Variable(s)
+			// **********
+
+			// **********
+			//{
+			//	int index;
+			//}
 			// **********
 
 			// **********
