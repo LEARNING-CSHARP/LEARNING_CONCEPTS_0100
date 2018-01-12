@@ -19,6 +19,10 @@
 
 			 */
 
+			// متغیرها به طور کلی به دو دسته تقسیم می‌شوند
+			// متغیرهایی که در داخل تابع تعریف می‌شوند که اصطلاحا به آنها متغیر محلی گفته می‌شود
+			// متغیرهایی که بیرون تابع و در درون خود کلاس تعریف می‌شوند که به آنها اصطلاحا فیلد گفته می‌شود
+
 			// برای دوره پیشرفته
 			// قرار می‌گیرند Stack تعریف می‌شوند، در داخل function تمامی متغیرهایی که در داخل
 			// می‌شوند، مطلقا مقدار اولیه ندارند Allocate قرار گرفته و یا اصطلاحا Stack تمامی متغیرهایی که در داخل
@@ -27,12 +31,11 @@
 			//قرار داشته و اصطلاحا به آن اشاره می‌کنند Heap قرار دارند ولی مقدارشان در داخل) Heap و یا Sttack متغیرهایی هستند که خودشان در یک جا (یا در Reference Type متغیرهای
 
 			// برای دوره مقدماتی
-			// در زبان سی‌شارپ، هرگاه متغیری را در داخل یک فانکشن تعریف نماییم، اصطلاحا به آن متغیر محلی اطلاق می‌شود
 			// در زبان سی‌شارپ، هرگاه یک متغیر محلی تعریف نماییم، مطلقا مقدار اولیه ندارد
 			// قرار می‌گیرند Stack تعریف می‌شوند، در داخل function تمامی متغیرهایی که در داخل
 
 			// **********
-			// Variable Declaration
+			// Variable Declaration = تعریف متغیر = Variable Definition
 			//int X;
 			//int Y;
 			// **********
@@ -57,6 +60,10 @@
 			// **********
 
 			// **********
+			//int X = 10, Y = X + 5;
+			// **********
+
+			// **********
 			//int X = 10;
 			//int Y = X + 5;
 			// **********
@@ -68,16 +75,19 @@
 			//Y = X + 5;
 			// **********
 
-			// X + Y =>
-			// + Operator عملگر
-			//	X, Y Operand عملوند
-
+			// **********
 			// Operator: + - * / %
+
+			// X + Y =>
+			// +		Operator عملگر
+			//	X, Y	Operand عملوند
+			// **********
 
 			// **********
 			//int X = 10;
 
-			// به متغیر ایکس پنج واحد اضافه کن
+			// عامیانه: به متغیر ایکس پنج واحد اضافه کن
+			// دقیق: مقدار متغیر ایکس را با پنج جمع کن و حاصل آن را در متغیر ایکس قرار بده
 			//X = X + 5;
 
 			//X += 5;
@@ -135,7 +145,7 @@
 			// **********
 
 			// **********
-			// استاندارد
+			// استاندارد = تاکتیک
 
 			// تمامی متغیرهایی که تعریف می‌کنیم باید با معنی باشند
 			// و نباید از محفف در نام آنها استفاده کنیم
@@ -146,17 +156,17 @@
 			// **********
 			// استاندارد قدیم
 
-			//string strFullName; // Type Prefix: str + Pascal Case
-			//long lngFirstNumber; // Type Prefix: lng + Pascal Case
+			//string strFullName;	// Type Prefix: str + Pascal Case
+			//long lngFirstNumber;	// Type Prefix: lng + Pascal Case
 			// **********
 
 			// **********
 			// استاندارد جدید
 
-			//long firstNumber; // Camel Case
-			//long firstNumberLong; // Camel Case + Type Name
-			//string fullName; // Camel Case
-			//string fullNameString; // Camel Case + Type Name
+			//long firstNumber;			// Camel Case
+			//long firstNumberLong;		// Camel Case + Type Name
+			//string fullName;			// Camel Case
+			//string fullNameString;	// Camel Case + Type Name
 			// **********
 
 			// **********
@@ -169,8 +179,8 @@
 			//X = Y;
 			//Y = X;
 
-			//Baghali X;
-			//Baghali Y;
+			//GooGooli X;
+			//GooGooli Y;
 
 			//X = Y;
 			//Y = X;
@@ -294,10 +304,11 @@
 			// **********
 			// **********
 			// Inline Condition
+
 			//int firstNumber = 10;
 			//int secondNumber = 20;
 
-			//int max = firstNumber > secondNumber ? firstNumber : ; ;
+			//int max = firstNumber > secondNumber ? firstNumber : lastNumber;
 			//int min = firstNumber > secondNumber ? secondNumber : firstNumber;
 			// **********
 			// **********
@@ -330,31 +341,14 @@
 			//	index++;
 			//}
 			// **********
-			// **********
-			// **********
 
+			// **********
 			// با استفاده از دستورات فوق، ۱۰ بار دستورات
 			// Do Something(s)
 			// اجرا می‌شود
-
-			// **********
-			// **********
-			// **********
-			// با استاندارد قدیم
-
-			//int intIndex = 1;
-
-			//while (intIndex <= 10)
-			//{
-			//	System.Console.WriteLine("Hello, World!");
-
-			//	intIndex++;
-			//}
 			// **********
 
 			// **********
-			// با استاندارد جدید
-
 			//int index = 1;
 
 			//while (index <= 10)
@@ -364,12 +358,14 @@
 			//	index++;
 			//}
 			// **********
-			// **********
-			// **********
 
+			// **********
 			// با استفاده از دستورات فوق، ۱۰ بار متن
 			// Hello, World!
 			// در صفحه نمایش داده می‌شود
+			// **********
+			// **********
+			// **********
 
 			// **********
 			// **********
@@ -407,31 +403,31 @@
 			// **********
 
 			// **********
-			//System.Console.Write("What is your first name: ");
-			//string firstName = System.Console.ReadLine();
+			System.Console.Write("What is your first name: ");
+			string firstName = System.Console.ReadLine();
 
-			//System.Console.Write("What is your last name: ");
-			//string lastName = System.Console.ReadLine();
+			System.Console.Write("What is your last name: ");
+			string lastName = System.Console.ReadLine();
 
-			////string fullName = "Full Name: " + firstName + lastName; // Wrong Usage!
+			//string fullName = "Full Name: " + firstName + lastName; // Wrong Usage!
 
-			////string fullName = "Full Name: " + firstName + "" + lastName; // Wrong Usage!
+			//string fullName = "Full Name: " + firstName + "" + lastName; // Wrong Usage!
 
-			////string fullName = "Full Name: " + firstName + " " + lastName;
+			//string fullName = "Full Name: " + firstName + " " + lastName;
 
-			////string fullName = string.Format("Full Name: {0} {1}", firstName, lastName);
-
-			////string fullName =
-			////	string.Format("Full Name: {0} {1}",
-			////	firstName, lastName);
-
-			////string fullName =
-			////	$"Full Name: {firstName} {lastName}";
+			//string fullName = string.Format("Full Name: {0} {1}", firstName, lastName);
 
 			//string fullName =
-			//	$"Full Name: { firstName } { lastName }";
+			//	string.Format("Full Name: {0} {1}",
+			//	firstName, lastName);
 
-			//System.Console.WriteLine(fullName);
+			//string fullName =
+			//	$"Full Name: {firstName} {lastName}";
+
+			string fullName =
+				$"Full Name: { firstName } { lastName }";
+
+			System.Console.WriteLine(fullName);
 			// **********
 
 			// **********
