@@ -403,31 +403,63 @@
 			// **********
 
 			// **********
-			System.Console.Write("What is your first name: ");
-			string firstName = System.Console.ReadLine();
+			//System.Console.Write("What is your first name: ");
+			//string firstName = System.Console.ReadLine();
 
-			System.Console.Write("What is your last name: ");
-			string lastName = System.Console.ReadLine();
+			//System.Console.Write("What is your last name: ");
+			//string lastName = System.Console.ReadLine();
 
-			//string fullName = "Full Name: " + firstName + lastName; // Wrong Usage!
+			////string fullName = "Full Name: " + firstName + lastName; // Wrong Usage!
 
-			//string fullName = "Full Name: " + firstName + "" + lastName; // Wrong Usage!
+			////string fullName = "Full Name: " + firstName + "" + lastName; // Wrong Usage!
 
 			//string fullName = "Full Name: " + firstName + " " + lastName;
 
-			//string fullName = string.Format("Full Name: {0} {1}", firstName, lastName);
+			////string fullName = string.Format("Full Name: {0} {1}", firstName, lastName);
 
-			//string fullName =
-			//	string.Format("Full Name: {0} {1}",
-			//	firstName, lastName);
+			////string fullName =
+			////	string.Format("Full Name: {0} {1}",
+			////	firstName, lastName);
 
-			//string fullName =
-			//	$"Full Name: {firstName} {lastName}";
+			////string fullName =
+			////	$"Full Name: {firstName} {lastName}";
 
-			string fullName =
-				$"Full Name: { firstName } { lastName }";
+			////string fullName =
+			////	$"Full Name: { firstName } { lastName }";
 
-			System.Console.WriteLine(fullName);
+			//// Wrong Usage!
+			////System.Console.WriteLine("fullName");
+
+			//System.Console.WriteLine(fullName);
+			// **********
+
+			// **********
+			//System.Console.Write("How many times do you want to write Hello, World!: ");
+
+			//string countString =
+			//	System.Console.ReadLine();
+
+			//int count =
+			//	System.Convert.ToInt32(countString);
+
+			//int index = 1;
+
+			//while (index <= count)
+			//{
+			//	// [1]: Hello, World!
+			//	// [2]: Hello, World!
+			//	// ...
+			//	// [9]: Hello, World!
+
+			//	string message = $"[{ index }]: Hello, World!";
+
+			//	// Wrong Usage!
+			//	//string message = "[{ index }]: Hello, World!";
+
+			//	System.Console.WriteLine(message);
+
+			//	index++;
+			//}
 			// **********
 
 			// **********
@@ -466,6 +498,60 @@
 			//	// **********
 
 			//	index++;
+			//}
+
+			//string result =
+			//	$"The sum of these numbers is { sum }.";
+
+			//System.Console.WriteLine(result);
+			// **********
+
+			// Debug: Breakpoint (F9),  Trace (F10, F11)
+
+			// **********
+			//// متنی بر روی صفحه نمایش ظاهر می‌گردد با این مضمون که
+			//// تعداد اعداد خود را مشخص نمایید
+			//System.Console.Write("How many numbers do you have: ");
+
+			//// دستور ذیل در انتظار وارد کردن عددی از کاربر خواهد بود
+			//// که بعد از وارد کردن آن عدد، به صورت رشته در متغیر ذیل آنرا ذخیره خواهد کرد
+			//string numberCountString =
+			//	System.Console.ReadLine();
+
+			//// دستور ذیل رشته فوق را به صورت عددی در متغیر ذیل ذخیره خواهد کرد
+			//int numberCount =
+			//	System.Convert.ToInt32(numberCountString);
+
+			//// متغیر ذیل قرار است حاصل جمع اعداد وارد شده در داخل آن قرار داده شود
+			//int sum = 0;
+
+			//// متغیر ذیل به عنوان یک شمارنده تعریف شده و مقدار اولیه یک را به آن اختصاص می‌دهیم
+			//int currentIndex = 1;
+
+			//// تا وقتی که شمارنده از تعداد کل اعداد کمتر یا مساوی باشد، عملیات داخل بلاک اجرا خواهد شد
+			//while (currentIndex <= numberCount)
+			//{
+			//	// [1] ->
+			//	string message = $"[{ currentIndex }] -> ";
+
+			//	System.Console.Write(message);
+
+			//	// **********
+			//	string numberString =
+			//		System.Console.ReadLine();
+
+			//	int number =
+			//		System.Convert.ToInt32(numberString);
+
+			//	sum += number;
+			//	// **********
+
+			//	// **********
+			//	//sum +=
+			//	//	System.Convert.ToInt32(System.Console.ReadLine());
+			//	// **********
+
+			//	currentIndex++;
 			//}
 
 			//string result =
@@ -704,33 +790,6 @@
 			// **********
 
 			// **********
-			//{
-			//	int index;
-			//}
-			// **********
-
-			// **********
-			//{
-			//	int index;
-
-			//	int index; // Error!
-			//}
-			// **********
-
-			// **********
-			//{
-			//	int index;
-
-			//	{
-
-			//		int index; // Error!
-
-			//	}
-
-			//}
-			// **********
-
-			// **********
 			//if(1 == 1)
 			//{
 			//	// ...
@@ -738,6 +797,37 @@
 			//	int index = 1;
 
 			//	// ...
+			//}
+
+			// **********
+			//if(1 == 1)
+			//{
+			//	int index;
+
+			//	// ...
+
+			//	int index; // Compile Error!
+			//}
+			// **********
+
+			// **********
+			//if(1 == 1)
+			//{
+			//	int index;
+
+			//	if(1 == 1)
+			//	{
+
+			//		int index; // Compile Error!
+
+			//	}
+
+			//}
+			// **********
+
+			// **********
+			//{
+			//	int index;
 			//}
 			// **********
 			// **********
