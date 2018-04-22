@@ -279,11 +279,11 @@
 			//bool fResult = f();
 			//bool gResult = g(); 
 
-			//if(fResult || gResult)
+			//if(fResult && gResult)
 			//{
 			//}
 
-			//if(fResult && gResult)
+			//if(fResult || gResult)
 			//{
 			//}
 			// **********
@@ -409,23 +409,23 @@
 			//System.Console.Write("What is your last name: ");
 			//string lastName = System.Console.ReadLine();
 
-			////string fullName = "Full Name: " + firstName + lastName; // Wrong Usage!
+			//string fullName = "Full Name: " + firstName + lastName; // Wrong Usage!
 
-			////string fullName = "Full Name: " + firstName + "" + lastName; // Wrong Usage!
+			//string fullName = "Full Name: " + firstName + "" + lastName; // Wrong Usage!
 
 			//string fullName = "Full Name: " + firstName + " " + lastName;
 
-			////string fullName = string.Format("Full Name: {0} {1}", firstName, lastName);
+			//string fullName = string.Format("Full Name: {0} {1}", firstName, lastName);
 
-			////string fullName =
-			////	string.Format("Full Name: {0} {1}",
-			////	firstName, lastName);
+			//string fullName =
+			//	string.Format("Full Name: {0} {1}",
+			//	firstName, lastName);
 
-			////string fullName =
-			////	$"Full Name: {firstName} {lastName}";
+			//string fullName =
+			//	$"Full Name: {firstName} {lastName}";
 
-			////string fullName =
-			////	$"Full Name: { firstName } { lastName }";
+			//string fullName =
+			//	$"Full Name: { firstName } { lastName }";
 
 			//// Wrong Usage!
 			////System.Console.WriteLine("fullName");
@@ -446,12 +446,14 @@
 
 			//while (index <= count)
 			//{
+			//	string message = "Hello, World!";
+
 			//	// [1]: Hello, World!
 			//	// [2]: Hello, World!
 			//	// ...
 			//	// [9]: Hello, World!
 
-			//	string message = $"[{ index }]: Hello, World!";
+			//	//string message = $"[{ index }]: Hello, World!";
 
 			//	// Wrong Usage!
 			//	//string message = "[{ index }]: Hello, World!";
@@ -463,13 +465,22 @@
 			// **********
 
 			// **********
+			// **********
+			// **********
 			//System.Console.Write("How many numbers do you have: ");
 
+			//// **********
 			//string numberCountString =
 			//	System.Console.ReadLine();
 
 			//int numberCount =
 			//	System.Convert.ToInt32(numberCountString);
+			//// **********
+
+			//// **********
+			////int numberCount =
+			////	System.Convert.ToInt32(System.Console.ReadLine());
+			//// **********
 
 			//int sum = 0;
 
@@ -505,6 +516,8 @@
 
 			//System.Console.WriteLine(result);
 			// **********
+			// **********
+			// **********
 
 			// Debug: Breakpoint (F9),  Trace (F10, F11)
 
@@ -518,25 +531,25 @@
 			//string numberCountString =
 			//	System.Console.ReadLine();
 
-			//// دستور ذیل رشته فوق را به صورت عددی در متغیر ذیل ذخیره خواهد کرد
+			//// دستور ذیل رشته فوق را به عدد تبدیل کرده و سپس آن را در متغیر ذیل ذخیره خواهد کرد
 			//int numberCount =
 			//	System.Convert.ToInt32(numberCountString);
 
-			//// متغیر ذیل قرار است حاصل جمع اعداد وارد شده در داخل آن قرار داده شود
+			//// متغیر ذیل قرار است حاصل جمع اعداد وارد شده را در درون خود ذخیره نماید
+			//// و در ابتدا مقدار اولیه آن را برابر مقدار صفر قرار می‌دهیم
 			//int sum = 0;
 
 			//// متغیر ذیل به عنوان یک شمارنده تعریف شده و مقدار اولیه یک را به آن اختصاص می‌دهیم
-			//int currentIndex = 1;
+			//int index = 1;
 
 			//// تا وقتی که شمارنده از تعداد کل اعداد کمتر یا مساوی باشد، عملیات داخل بلاک اجرا خواهد شد
-			//while (currentIndex <= numberCount)
+			//while (index <= numberCount)
 			//{
 			//	// [1] ->
-			//	string message = $"[{ currentIndex }] -> ";
+			//	string message = $"[{ index }] -> ";
 
 			//	System.Console.Write(message);
 
-			//	// **********
 			//	string numberString =
 			//		System.Console.ReadLine();
 
@@ -544,20 +557,16 @@
 			//		System.Convert.ToInt32(numberString);
 
 			//	sum += number;
-			//	// **********
 
-			//	// **********
-			//	//sum +=
-			//	//	System.Convert.ToInt32(System.Console.ReadLine());
-			//	// **********
-
-			//	currentIndex++;
+			//	index++;
 			//}
 
 			//string result =
 			//	$"The sum of these numbers is { sum }.";
 
 			//System.Console.WriteLine(result);
+			// **********
+			// **********
 			// **********
 
 			// **********
@@ -815,6 +824,24 @@
 			//{
 			//	int index;
 
+			//	// ...
+			//}
+
+			//	// ...
+
+			//if(1 == 1)
+			//{
+			//	int index;
+
+			//	// ...
+			//}
+			// **********
+
+			// **********
+			//if(1 == 1)
+			//{
+			//	int index;
+
 			//	if(1 == 1)
 			//	{
 
@@ -838,7 +865,7 @@
 			// **********
 
 			// **********
-			// هرگاه کامپایلر به دستور
+			// هرگاه برنامه در زمان اجرا به دستور
 			// break
 			// برخورد نماید
 			// از آخرین (درونی‌ترین) حلقه‌ای که در داخل آن قرار دارد خارج می‌شود
@@ -869,7 +896,7 @@
 			// **********
 
 			// **********
-			// هرگاه کامپایلر به دستور
+			// هرگاه برنامه در زمان اجرا به دستور
 			// continue
 			// برخورد نماید
 			// به ابتدای آخرین (درونی‌ترین) حلقه‌ای که در داخل آن قرار دارد وارد شده و شرط آنرا تست می‌کند
@@ -923,8 +950,8 @@
 			// **********
 
 			// **********
-			//string str = "A";
-			//char chr = 'A'; // 65
+			//string myString = "A";
+			//char myChar = 'A'; // 65
 			// **********
 
 			// **********
