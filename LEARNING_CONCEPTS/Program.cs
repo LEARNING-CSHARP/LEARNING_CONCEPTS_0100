@@ -121,20 +121,20 @@
 			// **********
 			// Primitive (Value) Types:
 
-			// byte => Type Prefix => byt
-			// int => Type Prefix => int
-			// long => Type Prefix => lng
+			// byte
+			// int
+			// long
 
-			// short => Type Prefix => sht
-			// uint => Type Prefix => uint
-			// ulong => Type Prefix => ulng
+			// short
+			// uint
+			// ulong
 
-			// single => Type Prefix => sng
-			// double => Type Prefix => dbl
-			// decimal => Type Prefix => dec
+			// single
+			// double
+			// decimal
 
-			// char => Type Prefix => chr
-			// bool => Type Prefix => bln
+			// char
+			// bool
 			// **********
 
 			// **********
@@ -212,6 +212,7 @@
 
 			// S = X; // Complile Error!
 			// X = S; // Complile Error!
+
 			//S = X.ToString();
 			//int X = System.Convert.ToInt32(S);
 			// **********
@@ -308,7 +309,7 @@
 			//int firstNumber = 10;
 			//int secondNumber = 20;
 
-			//int max = firstNumber > secondNumber ? firstNumber : lastNumber;
+			//int max = firstNumber > secondNumber ? firstNumber : secondNumber;
 			//int min = firstNumber > secondNumber ? secondNumber : firstNumber;
 			// **********
 			// **********
@@ -317,21 +318,6 @@
 			// **********
 			// **********
 			// **********
-			// با استاندارد قدیم
-
-			//int intIndex = 1;
-
-			//while (intIndex <= 10)
-			//{
-			//	// Do Something(s)
-
-			//	intIndex++;
-			//}
-			// **********
-
-			// **********
-			// با استاندارد جدید
-
 			//int index = 1;
 
 			//while (index <= 10)
