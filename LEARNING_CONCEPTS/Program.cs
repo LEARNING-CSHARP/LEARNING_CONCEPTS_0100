@@ -31,7 +31,7 @@
 			//قرار داشته و اصطلاحا به آن اشاره می‌کنند Heap قرار دارند ولی مقدارشان در داخل) Heap و یا Sttack متغیرهایی هستند که خودشان در یک جا (یا در Reference Type متغیرهای
 
 			// برای دوره مقدماتی
-			// در زبان سی‌شارپ، هرگاه یک متغیر محلی تعریف نماییم، مطلقا مقدار اولیه ندارد
+			// در زبان سی‌شارپ، هرگاه یک متغیر محلی (متغیر داخل تابع) تعریف نماییم، مطلقا مقدار اولیه ندارد
 			// قرار می‌گیرند Stack تعریف می‌شوند، در داخل function تمامی متغیرهایی که در داخل
 
 			// **********
@@ -310,7 +310,30 @@
 			//int secondNumber = 20;
 
 			//int max = firstNumber > secondNumber ? firstNumber : secondNumber;
+
+			//int max;
+
+			//if(firstNumber > secondNumber)
+			//{
+			//	max = firstNumber;
+			//}
+			//else
+			//{
+			//	max = secondNumber;
+			//}
+
 			//int min = firstNumber > secondNumber ? secondNumber : firstNumber;
+
+			//int min;
+
+			//if (firstNumber > secondNumber)
+			//{
+			//	min = secondNumber;
+			//}
+			//else
+			//{
+			//	min = firstNumber;
+			//}
 			// **********
 			// **********
 			// **********
