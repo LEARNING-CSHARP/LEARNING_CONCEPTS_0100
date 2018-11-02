@@ -121,11 +121,11 @@
 			// **********
 			// Primitive (Value) Types:
 
-			// byte
+			// short
 			// int
 			// long
 
-			// short
+			// byte
 			// uint
 			// ulong
 
@@ -277,14 +277,14 @@
 			// **********
 
 			// **********
-			//bool fResult = f();
-			//bool gResult = g(); 
+			//bool resultOfF = f();
+			//bool resultOfG = g(); 
 
-			//if(fResult && gResult)
+			//if(resultOfF && resultOfG)
 			//{
 			//}
 
-			//if(fResult || gResult)
+			//if(resultOfF || resultOfG)
 			//{
 			//}
 			// **********
@@ -305,12 +305,18 @@
 			// **********
 			// **********
 			// Inline Condition
+			// **********
 
+			// **********
 			//int firstNumber = 10;
 			//int secondNumber = 20;
+			// **********
 
+			// **********
 			//int max = firstNumber > secondNumber ? firstNumber : secondNumber;
+			// **********
 
+			// **********
 			//int max;
 
 			//if(firstNumber > secondNumber)
@@ -321,9 +327,13 @@
 			//{
 			//	max = secondNumber;
 			//}
+			// **********
 
+			// **********
 			//int min = firstNumber > secondNumber ? secondNumber : firstNumber;
+			// **********
 
+			// **********
 			//int min;
 
 			//if (firstNumber > secondNumber)
