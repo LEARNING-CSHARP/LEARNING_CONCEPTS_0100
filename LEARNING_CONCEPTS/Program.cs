@@ -496,14 +496,26 @@
 
 			//while (indexInt <= countInt)
 			//{
-			//	string messageString = "Hello, World!";
+			//	//string messageString = "Hello, World!";
 
 			//	// [1]: Hello, World!
 			//	// [2]: Hello, World!
 			//	// ...
 			//	// [9]: Hello, World!
 
+			//	//string messageString = "[" + indexInt + "]: Hello, World!";
+
+			//	//string messageString = string.Format("[{0}]: Hello, World!", indexInt);
+
+			//	//string messageString =
+			//	//	string.Format("[{0}]: Hello, World!", indexInt);
+
+			//	//string messageString = $"[{indexInt}]: Hello, World!";
+
 			//	//string messageString = $"[{ indexInt }]: Hello, World!";
+
+			//	string messageString =
+			//		$"[{ indexInt }]: Hello, World!";
 
 			//	// Wrong Usage!
 			//	//string messageString = "[{ indexInt }]: Hello, World!";
@@ -525,7 +537,8 @@
 
 			//for (int indexInt = 1; indexInt <= countInt; indexInt++)
 			//{
-			//	string messageString = $"[{ indexInt }]: Hello, World!";
+			//	string messageString =
+			//		$"[{ indexInt }]: Hello, World!";
 
 			//	System.Console.WriteLine(messageString);
 			//}
