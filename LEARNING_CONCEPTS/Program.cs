@@ -148,8 +148,8 @@
 			// استاندارد = تاکتیک
 
 			// تمامی متغیرهایی که تعریف می‌کنیم باید با معنی باشند
-			// و نباید از محفف در نام آنها استفاده کنیم
-			// و دیکته آنها باید درست و با دقت نوشته شود
+			// و نباید از مخفف در نام آنها استفاده کنیم
+			// و معنی و دیکته آنها باید درست و با دقت انتخاب و نوشته شود
 			// و نیز نباید به هیچ عنوان از نام‌گذاری به روش پینگلیش استفاده کنیم
 			// **********
 
@@ -313,10 +313,6 @@
 			// **********
 
 			// **********
-			//int max = firstNumber > secondNumber ? firstNumber : secondNumber;
-			// **********
-
-			// **********
 			//int max;
 
 			//if(firstNumber > secondNumber)
@@ -330,7 +326,7 @@
 			// **********
 
 			// **********
-			//int min = firstNumber > secondNumber ? secondNumber : firstNumber;
+			//int max = firstNumber > secondNumber ? firstNumber : secondNumber;
 			// **********
 
 			// **********
@@ -344,6 +340,10 @@
 			//{
 			//	min = firstNumber;
 			//}
+			// **********
+
+			// **********
+			//int min = firstNumber > secondNumber ? secondNumber : firstNumber;
 			// **********
 			// **********
 			// **********
@@ -437,8 +437,10 @@
 			//string fullName = string.Format("{0} {1}", firstName, lastName);
 
 			//string fullName =
-			//	string.Format("Full Name: {0} {1}",
-			//	firstName, lastName);
+			//	string.Format("Full Name: {0} {1}", firstName, lastName);
+
+			//string fullName =
+			//	"{firstName} {lastName}"; // Wrong Usage!
 
 			//string fullName =
 			//	$"{firstName} {lastName}";
