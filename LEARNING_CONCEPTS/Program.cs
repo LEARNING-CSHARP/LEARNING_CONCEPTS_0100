@@ -486,7 +486,7 @@
 			// **********
 
 			// **********
-			//System.Console.Write("How many times do you want to write Hello, World!: ");
+			//System.Console.Write("How many times do you want to write 'Hello, World!': ");
 
 			//string countString =
 			//	System.Console.ReadLine(); // "13"
@@ -1009,7 +1009,7 @@
 			//// Target: "A = 20, B = 10, C = 20"
 
 			//result =
-			//	string.Format("A = {1}, B = {0}, C = {1}", a); // Note: Compile OK! but Runtime Error!
+			//	string.Format("A = {1}, B = {0}, C = {1}", a); // Note: Compile OK But Warning! but Runtime Error!
 
 			//result =
 			//	$"A = { a }, B = { b }, C = { c }";
