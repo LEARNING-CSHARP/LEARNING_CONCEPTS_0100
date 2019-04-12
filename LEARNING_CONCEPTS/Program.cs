@@ -170,23 +170,32 @@
 			// **********
 
 			// **********
+			// **********
+			// **********
 			// هر متغیری از هر جنسی را می‌توان در داخل متغیری از همان جنس قرار داد
 			// اعم از این که جنس آنرا بشناسیم یا نشناسیم
 
+			// **********
 			//int X = 10;
 			//int Y = 20;
 
 			//X = Y;
 			//Y = X;
+			// **********
 
+			// **********
 			//GooGooli X;
 			//GooGooli Y;
 
 			//X = Y;
 			//Y = X;
+			// **********
+			// **********
+			// **********
 
+			// **********
 			// ولی هرگاه بخواهیم متغیری از یک جنس را در داخل متغیری از جنس دیگری
-			// قرار دهیم، سه حالت امکانپذیر است
+			// قرار دهیم، سه حالت امکان‌پذیر است
 
 			// 1. می توان با خیال راحت
 			// 2. می توان به شرط آنکه مسوولیت آن را بپذیریم
@@ -440,13 +449,13 @@
 			//	string.Format("Full Name: {0} {1}", firstName, lastName);
 
 			//string fullName =
-			//	"{firstName} {lastName}"; // Wrong Usage!
-
-			//string fullName =
 			//	$"{firstName} {lastName}";
 
 			//string fullName =
-			//	$"{ firstName } { lastName }";
+			//	"{firstName} {lastName}"; // Wrong Usage!
+
+			//string fullName =
+			//	$"{ firstName } { lastName }"; // این کد خواناتر می‌شود
 
 			//// Wrong Usage!
 			////System.Console.WriteLine("fullName");
@@ -640,6 +649,8 @@
 			// Debug: Breakpoint (F9),  Trace (F10, F11)
 
 			// Documentation
+
+			// Inline Documentation
 
 			// **********
 			//// متنی بر روی صفحه نمایش ظاهر می‌گردد با این مضمون که
