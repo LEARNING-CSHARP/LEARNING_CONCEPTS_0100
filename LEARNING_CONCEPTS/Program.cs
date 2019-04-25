@@ -390,7 +390,7 @@
 			// **********
 			// با استفاده از دستورات فوق، ۱۰ بار متن
 			// Hello, World!
-			// در صفحه نمایش داده می‌شود
+			// در صفحه، نمایش داده می‌شود
 			// **********
 			// **********
 			// **********
@@ -400,6 +400,10 @@
 			// **********
 			//string firstName = "Dariush";
 			//string lastName = "Tasdighi";
+
+			//string fullName = firstName + lastName;
+
+			//string fullName = firstName + "" + lastName;
 
 			//string fullName = firstName + " " + lastName;
 
@@ -437,22 +441,22 @@
 			//System.Console.Write("What is your last name: ");
 			//string lastName = System.Console.ReadLine();
 
-			//string fullName = firstName + lastName; // Wrong Usage!
+			////string fullName = firstName + lastName; // Wrong Usage!
 
-			//string fullName = firstName + "" + lastName; // Wrong Usage!
+			////string fullName = firstName + "" + lastName; // Wrong Usage!
 
-			//string fullName = firstName + " " + lastName;
+			////string fullName = firstName + " " + lastName;
 
-			//string fullName = string.Format("{0} {1}", firstName, lastName);
+			////string fullName = string.Format("{0} {1}", firstName, lastName);
 
-			//string fullName =
-			//	string.Format("Full Name: {0} {1}", firstName, lastName);
+			////string fullName =
+			////	string.Format("Full Name: {0} {1}", firstName, lastName);
 
-			//string fullName =
-			//	$"{firstName} {lastName}";
+			////string fullName =
+			////	$"{firstName} {lastName}";
 
-			//string fullName =
-			//	"{firstName} {lastName}"; // Wrong Usage!
+			////string fullName =
+			////	"{firstName} {lastName}"; // Wrong Usage!
 
 			//string fullName =
 			//	$"{ firstName } { lastName }"; // این کد خواناتر می‌شود
@@ -475,18 +479,18 @@
 			// **********
 			// **********
 			// **********
-			//int indexInt = 1;
+			//int index = 1;
 
-			//while (indexInt <= 10)
+			//while (index <= 10)
 			//{
 			//	// Do Something(s)!
 
-			//	indexInt++;
+			//	index++;
 			//}
 			// **********
 
 			// **********
-			//for (int indexInt = 1; indexInt <= 10; indexInt++)
+			//for (int index = 1; index <= 10; index++)
 			//{
 			//	// Do Something(s)!
 			//}
@@ -500,40 +504,40 @@
 			//string countString =
 			//	System.Console.ReadLine(); // "13"
 
-			//int countInt =
+			//int count =
 			//	System.Convert.ToInt32(countString); // 13
 
-			//int indexInt = 1;
+			//int index = 1;
 
-			//while (indexInt <= countInt)
+			//while (index <= count)
 			//{
-			//	//string messageString = "Hello, World!";
+			//	//string message = "Hello, World!";
 
 			//	// [1]: Hello, World!
 			//	// [2]: Hello, World!
 			//	// ...
 			//	// [9]: Hello, World!
 
-			//	//string messageString = "[" + indexInt + "]: Hello, World!";
+			//	//string message = "[" + index + "]: Hello, World!";
 
-			//	//string messageString = string.Format("[{0}]: Hello, World!", indexInt);
+			//	//string message = string.Format("[{0}]: Hello, World!", index);
 
-			//	//string messageString =
-			//	//	string.Format("[{0}]: Hello, World!", indexInt);
+			//	//string message =
+			//	//	string.Format("[{0}]: Hello, World!", index);
 
-			//	//string messageString = $"[{indexInt}]: Hello, World!";
+			//	//string message = $"[{index}]: Hello, World!";
 
-			//	//string messageString = $"[{ indexInt }]: Hello, World!";
+			//	//string message = $"[{ index }]: Hello, World!";
 
-			//	string messageString =
-			//		$"[{ indexInt }]: Hello, World!";
+			//	string message =
+			//		$"[{ index }]: Hello, World!";
 
 			//	// Wrong Usage!
-			//	//string messageString = "[{ indexInt }]: Hello, World!";
+			//	//string message = "[{ index }]: Hello, World!";
 
-			//	System.Console.WriteLine(messageString);
+			//	System.Console.WriteLine(message);
 
-			//	indexInt++;
+			//	index++;
 			//}
 			// **********
 
@@ -543,15 +547,18 @@
 			//string countString =
 			//	System.Console.ReadLine();
 
-			//int countInt =
+			//int count =
 			//	System.Convert.ToInt32(countString);
 
-			//for (int indexInt = 1; indexInt <= countInt; indexInt++)
-			//{
-			//	string messageString =
-			//		$"[{ indexInt }]: Hello, World!";
+			////int count =
+			////	System.Convert.ToInt32(System.Console.ReadLine());
 
-			//	System.Console.WriteLine(messageString);
+			//for (int index = 1; index <= count; index++)
+			//{
+			//	string message =
+			//		$"[{ index }]: Hello, World!";
+
+			//	System.Console.WriteLine(message);
 			//}
 			// **********
 
@@ -561,51 +568,51 @@
 			//System.Console.Write("How many numbers do you have: ");
 
 			//// **********
-			//string numberCountString =
+			//string countString =
 			//	System.Console.ReadLine();
 
-			//int numberCountInt =
-			//	System.Convert.ToInt32(numberCountString);
+			//int count =
+			//	System.Convert.ToInt32(countString);
 			//// **********
 
 			//// **********
-			////int numberCountInt =
+			////int count =
 			////	System.Convert.ToInt32(System.Console.ReadLine());
 			//// **********
 
-			//int sumInt = 0;
+			//int sum = 0;
 
-			//int indexInt = 1;
+			//int index = 1;
 
-			//while (indexInt <= numberCountInt)
+			//while (index <= count)
 			//{
 			//	// [1] ->
-			//	string messageString = $"[{ indexInt }] -> ";
+			//	string message = $"[{ index }] -> ";
 
-			//	System.Console.Write(messageString);
+			//	System.Console.Write(message);
 
 			//	// **********
 			//	string numberString =
 			//		System.Console.ReadLine();
 
-			//	int numberInt =
+			//	int number =
 			//		System.Convert.ToInt32(numberString);
 
-			//	sumInt += numberInt;
+			//	sum += number;
 			//	// **********
 
 			//	// **********
-			//	//sumInt +=
+			//	//sum +=
 			//	//	System.Convert.ToInt32(System.Console.ReadLine());
 			//	// **********
 
-			//	indexInt++;
+			//	index++;
 			//}
 
-			//string resultString =
-			//	$"The sum of these numbers is { sumInt }.";
+			//string result =
+			//	$"The sum of these numbers is { sum }.";
 
-			//System.Console.WriteLine(resultString);
+			//System.Console.WriteLine(result);
 			// **********
 			// **********
 			// **********
@@ -615,33 +622,33 @@
 			// **********
 			//System.Console.Write("How many numbers do you have: ");
 
-			//string numberCountString =
+			//string countString =
 			//	System.Console.ReadLine();
 
-			//int numberCountInt =
-			//	System.Convert.ToInt32(numberCountString);
+			//int count =
+			//	System.Convert.ToInt32(countString);
 
-			//int sumInt = 0;
+			//int sum = 0;
 
-			//for (int indexInt = 1; indexInt <= numberCountInt; indexInt++)
+			//for (int index = 1; index <= count; index++)
 			//{
-			//	string messageString = $"[{ indexInt }] -> ";
+			//	string message = $"[{ index }] -> ";
 
-			//	System.Console.Write(messageString);
+			//	System.Console.Write(message);
 
 			//	string numberString =
 			//		System.Console.ReadLine();
 
-			//	int numberInt =
+			//	int number =
 			//		System.Convert.ToInt32(numberString);
 
-			//	sumInt += numberInt;
+			//	sum += number;
 			//}
 
-			//string resultString =
-			//	$"The sum of these numbers is { sumInt }.";
+			//string result =
+			//	$"The sum of these numbers is { sum }.";
 
-			//System.Console.WriteLine(resultString);
+			//System.Console.WriteLine(result);
 			// **********
 			// **********
 			// **********
@@ -659,19 +666,19 @@
 
 			//// دستور ذیل در انتظار وارد کردن عددی از کاربر خواهد بود
 			//// که بعد از وارد کردن آن عدد، به صورت رشته در متغیر ذیل آنرا ذخیره خواهد کرد
-			//string numberCountString =
+			//string countString =
 			//	System.Console.ReadLine();
 
 			//// دستور ذیل رشته فوق را به عدد تبدیل کرده و سپس آن را در متغیر ذیل ذخیره خواهد کرد
-			//int numberCountInt =
-			//	System.Convert.ToInt32(numberCountString);
+			//int count =
+			//	System.Convert.ToInt32(countString);
 
 			//// متغیر ذیل قرار است حاصل جمع اعداد وارد شده را در درون خود ذخیره نماید
 			//// و در ابتدا مقدار اولیه آن را برابر مقدار صفر قرار می‌دهیم
-			//int sumInt = 0;
+			//int sum = 0;
 
 			//// متغیر ذیل به عنوان یک شمارنده تعریف شده و مقدار اولیه یک را به آن اختصاص می‌دهیم
-			//int indexInt = 1;
+			//int index = 1;
 			// **********
 			// **********
 			// **********
@@ -855,9 +862,9 @@
 			// **********
 
 			// **********
-			//int numberInt = 10;
+			//int number = 10;
 
-			//while (numberInt < 5)
+			//while (number < 5)
 			//{
 			//	System.Console.WriteLine("Hello, World!");
 			//}
@@ -865,7 +872,7 @@
 			//do
 			//{
 			//	System.Console.WriteLine("Hello, World!");
-			//} while (numberInt < 5);
+			//} while (number < 5);
 			//// ; -> is required!
 			// **********
 
@@ -881,35 +888,7 @@
 			//{
 			//	// ...
 
-			//	int indexInt = 1;
-
-			//	// ...
-			//}
-
-			// **********
-			//if(1 == 1)
-			//{
-			//	int indexInt;
-
-			//	// ...
-
-			//	int indexInt; // Compile Error!
-			//}
-			// **********
-
-			// **********
-			//if(1 == 1)
-			//{
-			//	int indexInt;
-
-			//	// ...
-			//}
-
-			//	// ...
-
-			//if(1 == 1)
-			//{
-			//	int indexInt;
+			//	int index = 1;
 
 			//	// ...
 			//}
@@ -918,7 +897,47 @@
 			// **********
 			//if(1 == 1)
 			//{
-			//	int indexInt;
+			//	int index;
+
+			//	// ...
+
+			//	int index; // Compile Error!
+			//}
+			// **********
+
+			// **********
+			//if(1 == 1)
+			//{
+			//	int index;
+
+			//	// ...
+
+			//	float index; // Compile Error!
+			//}
+			// **********
+
+			// **********
+			//if(1 == 1)
+			//{
+			//	int index;
+
+			//	// ...
+			//}
+
+			//	// ...
+
+			//if(1 == 1)
+			//{
+			//	int index;
+
+			//	// ...
+			//}
+			// **********
+
+			// **********
+			//if(1 == 1)
+			//{
+			//	int index;
 
 			//	if(1 == 1)
 			//	{
@@ -932,7 +951,7 @@
 
 			// **********
 			//{
-			//	int indexInt;
+			//	int index;
 			//}
 			// **********
 			// **********
@@ -979,25 +998,25 @@
 			// برخورد نماید
 			// به ابتدای آخرین (درونی‌ترین) حلقه‌ای که در داخل آن قرار دارد وارد شده و شرط آنرا تست می‌کند
 
-			//int indexInt = 1;
+			//int index = 1;
 
-			//while (indexInt <= 10)
+			//while (index <= 10)
 			//{
-			//	if (indexInt == 3)
+			//	if (index == 3)
 			//	{
-			//		indexInt = 6;
+			//		index = 6;
 
 			//		continue;
 			//	}
 
-			//	if (indexInt == 8)
+			//	if (index == 8)
 			//	{
 			//		break;
 			//	}
 
-			//	System.Console.WriteLine($"> { indexInt }");
+			//	System.Console.WriteLine($"> { index }");
 
-			//	indexInt++;
+			//	index++;
 			//}
 			// **********
 
