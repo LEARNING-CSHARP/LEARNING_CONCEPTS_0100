@@ -41,6 +41,12 @@
 			// **********
 
 			// **********
+			// در مثال ذیل، هر چند که یک خط کد وجود دارد، ولی دو دستور نوشته شده است
+			//int X; int Y;
+			// **********
+
+			// **********
+			// خط ذیل، دقیقا یک دستور است نه دو دستور
 			//int X, Y;
 			// **********
 
@@ -86,8 +92,8 @@
 			// **********
 			//int X = 10;
 
-			// عامیانه: به متغیر ایکس پنج واحد اضافه کن
-			// دقیق: مقدار متغیر ایکس را با پنج جمع کن و حاصل آن را در متغیر ایکس قرار بده
+			// عامیانه: به متغیر ایکس، پنج واحد اضافه کن
+			// دقیق: مقدار متغیر ایکس را با عدد پنج جمع کن و حاصل آن را در متغیر ایکس قرار بده
 			//X = X + 5;
 
 			//X += 5;
@@ -97,8 +103,11 @@
 			//int X = 10;
 
 			//X = X + 1;
+
 			//X += 1;
+
 			//X++;
+
 			//++X;
 			// **********
 
@@ -106,8 +115,11 @@
 			//int X = 10;
 
 			//X = X - 1;
+
 			//X -= 1;
+
 			//X--;
+
 			//--X;
 			// **********
 
@@ -157,16 +169,18 @@
 			// استاندارد قدیم
 
 			//string strFullName;	// Type Prefix: str + Pascal Case
+
 			//long lngFirstNumber;	// Type Prefix: lng + Pascal Case
 			// **********
 
 			// **********
 			// استاندارد جدید
 
-			//long firstNumber;			// Camel Case
-			//long firstNumberLong;		// Camel Case + Type Name
 			//string fullName;			// Camel Case
 			//string fullNameString;	// Camel Case + Type Name
+
+			//long firstNumber;			// Camel Case
+			//long firstNumberLong;		// Camel Case + Type Name
 			// **********
 
 			// **********
@@ -390,7 +404,7 @@
 			// **********
 			// با استفاده از دستورات فوق، ۱۰ بار متن
 			// Hello, World!
-			// در صفحه، نمایش داده می‌شود
+			// در صفحه نمایش، چاپ می‌شود
 			// **********
 			// **********
 			// **********
@@ -653,7 +667,7 @@
 			// **********
 			// **********
 
-			// Debug: Breakpoint (F9),  Trace (F10, F11)
+			// Debug: Breakpoint (F9), Trace (F10, F11), Right Click on Variable -> Add Watch
 
 			// Documentation
 
@@ -856,6 +870,7 @@
 			//	case "4":
 			//	{
 			//		System.Console.WriteLine("Step (4)");
+
 			//		break;
 			//	}
 			//}
@@ -1040,6 +1055,9 @@
 
 			//result =
 			//	string.Format("A = {1}, B = {0}, C = {1}", a); // Note: Compile OK But Warning! but Runtime Error!
+
+			//result =
+			//	$"A = {a}, B = {b}, C = {c}";
 
 			//result =
 			//	$"A = { a }, B = { b }, C = { c }";
