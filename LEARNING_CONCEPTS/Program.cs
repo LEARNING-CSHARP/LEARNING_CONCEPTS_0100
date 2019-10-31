@@ -86,7 +86,7 @@
 
 			// X + Y =>
 			// +		Operator عملگر
-			//	X, Y	Operand عملوند
+			// X, Y		Operand عملوند
 			// **********
 
 			// **********
@@ -127,7 +127,8 @@
 			//int X = 10;
 
 			//int Y = X++; // Y = 10, X = 11
-			//int Z = ++X; // Z = 11, X = 11
+			// OR
+			//int Y = ++X; // Y = 11, X = 11
 			// **********
 
 			// **********
@@ -469,8 +470,9 @@
 			////string fullName =
 			////	$"{firstName} {lastName}";
 
+			//// Wrong Usage!
 			////string fullName =
-			////	"{firstName} {lastName}"; // Wrong Usage!
+			////	"{firstName} {lastName}";
 
 			//string fullName =
 			//	$"{ firstName } { lastName }"; // این کد خواناتر می‌شود
@@ -877,18 +879,28 @@
 			// **********
 
 			// **********
+			// **********
+			// **********
 			//int number = 10;
+			// **********
+
+			// **********
+			//System.Console.WriteLine("Hello, World!");
 
 			//while (number < 5)
 			//{
 			//	System.Console.WriteLine("Hello, World!");
 			//}
+			// **********
 
+			// **********
 			//do
 			//{
 			//	System.Console.WriteLine("Hello, World!");
 			//} while (number < 5);
 			//// ; -> is required!
+			// **********
+			// **********
 			// **********
 
 			// **********
@@ -901,11 +913,11 @@
 			// **********
 			//if(1 == 1)
 			//{
-			//	// ...
+			//	...
 
 			//	int index = 1;
 
-			//	// ...
+			//	...
 			//}
 			// **********
 
@@ -914,7 +926,7 @@
 			//{
 			//	int index;
 
-			//	// ...
+			//	...
 
 			//	int index; // Compile Error!
 			//}
@@ -925,7 +937,7 @@
 			//{
 			//	int index;
 
-			//	// ...
+			//	...
 
 			//	float index; // Compile Error!
 			//}
@@ -934,18 +946,22 @@
 			// **********
 			//if(1 == 1)
 			//{
+			//	...
+
 			//	int index;
 
-			//	// ...
+			//	...
 			//}
 
-			//	// ...
+			//	...
 
 			//if(1 == 1)
 			//{
+			//	...
+
 			//	int index;
 
-			//	// ...
+			//	...
 			//}
 			// **********
 
