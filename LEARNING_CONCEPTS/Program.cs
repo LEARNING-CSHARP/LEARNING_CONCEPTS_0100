@@ -1029,26 +1029,26 @@
 			// برخورد نماید
 			// به ابتدای آخرین (درونی‌ترین) حلقه‌ای که در داخل آن قرار دارد وارد شده و شرط آنرا تست می‌کند
 
-			//int index = 1;
+			int index = 1;
 
-			//while (index <= 10)
-			//{
-			//	if (index == 3)
-			//	{
-			//		index = 6;
+			while (index <= 10)
+			{
+				if (index == 3)
+				{
+					index = 6;
 
-			//		continue;
-			//	}
+					continue;
+				}
 
-			//	if (index == 8)
-			//	{
-			//		break;
-			//	}
+				if (index == 8)
+				{
+					break;
+				}
 
-			//	System.Console.WriteLine($"> { index }");
+				System.Console.WriteLine($"> { index }");
 
-			//	index++;
-			//}
+				index++;
+			}
 			// **********
 
 			// **********
