@@ -242,6 +242,8 @@
 			// **********
 
 			// **********
+			// Compare:
+			//
 			// == (NOT =)		!= (NOT <>)		<		>		<= (NOT =<)		>= (NOT =>)
 			// **********
 
@@ -290,6 +292,12 @@
 
 			// **********
 			// **********
+			// **********
+			// Logic:
+			//
+			// && => AND		|| => OR		! => NOT
+			// **********
+
 			// **********
 			//if(f() && g())
 			//{
@@ -464,8 +472,8 @@
 
 			////string fullName = string.Format("{0} {1}", firstName, lastName);
 
-			////string fullName =
-			////	string.Format("Full Name: {0} {1}", firstName, lastName);
+			//string fullName =
+			//	string.Format("Full Name: {0} {1}", firstName, lastName);
 
 			////string fullName =
 			////	$"{firstName} {lastName}";
@@ -489,7 +497,8 @@
 			//	D;
 			//}
 
-			// A, B, D, C, B, D, C, B, D, C,...
+			// B is condition!
+			// A, [B, D, C], [B, D, C], [B, D, C], ...
 			// **********
 
 			// **********
