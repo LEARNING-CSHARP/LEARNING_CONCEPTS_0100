@@ -53,7 +53,7 @@
 			// **********
 			//int X, Y;
 
-			//Y = X + 10; // (=) -> (Assignment), Compile Error!
+			//Y = X + 10; // Right Hand -> Expression | = -> (Assignment), Compile Error!
 			// **********
 
 			// **********
@@ -424,8 +424,10 @@
 			//string firstName = "Dariush";
 			//string lastName = "Tasdighi";
 
+			// Wrong Usage!
 			//string fullName = firstName + lastName;
 
+			// Wrong Usage!
 			//string fullName = firstName + "" + lastName;
 
 			//string fullName = firstName + " " + lastName;
@@ -464,9 +466,11 @@
 			//System.Console.Write("What is your last name: ");
 			//string lastName = System.Console.ReadLine();
 
-			////string fullName = firstName + lastName; // Wrong Usage!
+			//// Wrong Usage!
+			////string fullName = firstName + lastName;
 
-			////string fullName = firstName + "" + lastName; // Wrong Usage!
+			//// Wrong Usage!
+			////string fullName = firstName + "" + lastName;
 
 			////string fullName = firstName + " " + lastName;
 
@@ -519,6 +523,12 @@
 			//{
 			//	// Do Something(s)!
 			//}
+
+			// **********
+			//for (int index = 1; index <= 10; index++)
+			//{
+			//	System.Console.WriteLine("Hello, World!");
+			//}
 			// **********
 			// **********
 			// **********
@@ -557,9 +567,6 @@
 			//	string message =
 			//		$"[{ index }]: Hello, World!";
 
-			//	// Wrong Usage!
-			//	//string message = "[{ index }]: Hello, World!";
-
 			//	System.Console.WriteLine(message);
 
 			//	index++;
@@ -575,9 +582,6 @@
 			//int count =
 			//	System.Convert.ToInt32(countString);
 
-			////int count =
-			////	System.Convert.ToInt32(System.Console.ReadLine());
-
 			//for (int index = 1; index <= count; index++)
 			//{
 			//	string message =
@@ -588,22 +592,29 @@
 			// **********
 
 			// **********
+			// کاری که نباید سر کلاس انجام دهید
+			// **********
+			//System.Console.Write("How many times do you want to write Hello, World!: ");
+
+			//int count =
+			//	System.Convert.ToInt32(System.Console.ReadLine()); // کسر ده نمره
+
+			//for (int index = 1; index <= count; index++)
+			//{
+			//	System.Console.WriteLine($"[{ index }]: Hello, World!"); // کسر ده نمره
+			//}
+			// **********
+
+			// **********
 			// **********
 			// **********
 			//System.Console.Write("How many numbers do you have: ");
 
-			//// **********
 			//string countString =
 			//	System.Console.ReadLine();
 
 			//int count =
 			//	System.Convert.ToInt32(countString);
-			//// **********
-
-			//// **********
-			////int count =
-			////	System.Convert.ToInt32(System.Console.ReadLine());
-			//// **********
 
 			//int sum = 0;
 
@@ -896,7 +907,7 @@
 			// **********
 			//System.Console.WriteLine("Hello, World!");
 
-			//while (number < 5)
+			//while (<Some Condition>)
 			//{
 			//	System.Console.WriteLine("Hello, World!");
 			//}
@@ -906,7 +917,7 @@
 			//do
 			//{
 			//	System.Console.WriteLine("Hello, World!");
-			//} while (number < 5);
+			//} while (<Some Condition>);
 			//// ; -> is required!
 			// **********
 			// **********
