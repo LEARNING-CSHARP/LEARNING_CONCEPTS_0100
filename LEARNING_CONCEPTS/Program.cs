@@ -1065,7 +1065,7 @@
 					break;
 				}
 
-				System.Console.WriteLine($"> { index }");
+				System.Console.WriteLine(index);
 
 				index++;
 			}
