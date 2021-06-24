@@ -707,6 +707,9 @@
 			//string countString =
 			//	System.Console.ReadLine();
 
+			// مشکل فارسی / انگلیسی
+			// متغیر رشته‌ای countString را تبدیل به عدد کرده و در متغیر عددی count ذخیره می‌کنیم
+
 			//// دستور ذیل رشته فوق را به عدد تبدیل کرده و سپس آن را در متغیر ذیل ذخیره خواهد کرد
 			//int count =
 			//	System.Convert.ToInt32(countString);
