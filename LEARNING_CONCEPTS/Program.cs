@@ -3,13 +3,17 @@
 	/// <summary>
 	/// Startup Class
 	/// </summary>
-	class Program
+	public static class Program
 	{
+		static Program()
+		{
+		}
+
 		/// <summary>
 		/// Startup Function
 		/// </summary>
 		/// <param name="args"></param>
-		static void Main(string[] args)
+		public static void Main()
 		{
 			// Inline Comment
 
