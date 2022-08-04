@@ -634,7 +634,7 @@
 			//while (index <= count)
 			//{
 			//	// [1] ->
-			//	string message = $"[{ index }] -> ";
+			//	string message = $"[{index}]: ";
 
 			//	System.Console.Write(message);
 
@@ -657,7 +657,7 @@
 			//}
 
 			//string result =
-			//	$"The sum of these numbers is { sum }.";
+			//	$"The sum of these numbers is {sum}.";
 
 			//System.Console.WriteLine(result);
 			// **********
@@ -679,7 +679,7 @@
 
 			//for (int index = 1; index <= count; index++)
 			//{
-			//	string message = $"[{ index }] -> ";
+			//	string message = $"[{index}]: ";
 
 			//	System.Console.Write(message);
 
@@ -693,7 +693,7 @@
 			//}
 
 			//string result =
-			//	$"The sum of these numbers is { sum }.";
+			//	$"The sum of these numbers is {sum}.";
 
 			//System.Console.WriteLine(result);
 			// **********
@@ -1059,6 +1059,13 @@
 
 			// **********
 			// هرگاه برنامه در زمان اجرا، به دستور
+			// break
+			// برخورد نماید
+			// از آخرین (درونی‌ترین) حلقه‌ای که در داخل آن قرار دارد خارج می‌شود
+			// **********
+
+			// **********
+			// هرگاه برنامه در زمان اجرا، به دستور
 			// continue
 			// برخورد نماید
 			// به ابتدای آخرین (درونی‌ترین) حلقه‌ای که در داخل آن قرار دارد وارد شده و شرط آنرا تست می‌کند
@@ -1108,9 +1115,6 @@
 
 			//result =
 			//	$"A = {a}, B = {b}, C = {c}";
-
-			//result =
-			//	$"A = { a }, B = { b }, C = { c }";
 
 			//System.Console.WriteLine(result);
 			// **********
