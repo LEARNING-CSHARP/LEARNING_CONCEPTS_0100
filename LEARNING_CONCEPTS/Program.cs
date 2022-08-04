@@ -136,17 +136,21 @@
 			// **********
 
 			// **********
+			// https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types
+
 			// Primitive (Value) Types:
 
+			// sbyte
 			// short
 			// int
 			// long
 
 			// byte
+			// ushort
 			// uint
 			// ulong
 
-			// single
+			// float
 			// double
 			// decimal
 
@@ -157,10 +161,15 @@
 			// **********
 
 			// **********
-			// Pascal Case => FirstNumber
-			// Camel Case  => firstNumber
-			// Upper Case  => FIRST_NUMBER
-			// Lower Case  => first_number
+			// My First Number:
+
+			// Title Case	=> My First Number
+
+			// Pascal Case	=> MyFirstNumber
+			// Camel Case	=> myFirstNumber
+			// Snake Case	=> my_first_number
+			// Kebab Case	=> my-first-number
+			// Upper Case	=> FIRST_NUMBER
 			// **********
 
 			// **********
@@ -492,9 +501,6 @@
 			////string fullName =
 			////	"{firstName} {lastName}";
 
-			//string fullName =
-			//	$"{ firstName } { lastName }"; // این کد خواناتر می‌شود
-
 			//// Wrong Usage!
 			////System.Console.WriteLine("fullName");
 
@@ -529,6 +535,7 @@
 			//{
 			//	// Do Something(s)!
 			//}
+			// **********
 
 			// **********
 			//for (int index = 1; index <= 10; index++)
@@ -568,10 +575,8 @@
 
 			//	//string message = $"[{index}]: Hello, World!";
 
-			//	//string message = $"[{ index }]: Hello, World!";
-
 			//	string message =
-			//		$"[{ index }]: Hello, World!";
+			//		$"[{index}]: Hello, World!";
 
 			//	System.Console.WriteLine(message);
 
