@@ -1,4 +1,6 @@
-﻿namespace LEARNING_CSHARP
+﻿using System.Runtime.CompilerServices;
+
+namespace LEARNING_CSHARP
 {
 	/// <summary>
 	/// Startup Class
@@ -161,15 +163,24 @@
 			// **********
 
 			// **********
-			// My First Number:
+			//System.Console.WriteLine(sbyte.MinValue);
+			//System.Console.WriteLine(sbyte.MaxValue);
 
-			// Title Case	=> My First Number
+			//System.Console.WriteLine(byte.MinValue);
+			//System.Console.WriteLine(byte.MaxValue);
+			// **********
+
+			// **********
+			// My First Number:
 
 			// Pascal Case	=> MyFirstNumber
 			// Camel Case	=> myFirstNumber
-			// Snake Case	=> my_first_number
-			// Kebab Case	=> my-first-number
+
 			// Upper Case	=> FIRST_NUMBER
+			// Snake Case	=> my_first_number
+
+			// Kebab Case	=> my-first-number
+			// Title Case	=> My First Number
 			// **********
 
 			// **********
