@@ -1,16 +1,10 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace LEARNING_CSHARP
+﻿namespace LEARNING_CSHARP
 {
 	/// <summary>
 	/// Startup Class
 	/// </summary>
 	public static class Program
 	{
-		static Program()
-		{
-		}
-
 		/// <summary>
 		/// Startup Function
 		/// </summary>
@@ -18,12 +12,14 @@ namespace LEARNING_CSHARP
 		public static void Main()
 		{
 			// Inline Comment
+			// CTRL + K + C => Comment
+			// CTRL + K + U => Uncomment
 
 			/*
 
 				Block Comment
 
-			 */
+			*/
 
 			// متغیرها به طور کلی به دو دسته تقسیم می‌شوند
 			// متغیرهایی که در داخل تابع تعریف می‌شوند که اصطلاحا به آنها متغیر محلی گفته می‌شود
@@ -132,15 +128,17 @@ namespace LEARNING_CSHARP
 			// **********
 			//int X = 10;
 
-			//int Y = X++; // Y = 10, X = 11
-			// OR
 			//int Y = ++X; // Y = 11, X = 11
+			// OR
+			//int Y = X++; // Y = 10, X = 11
 			// **********
 
 			// **********
 			// https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types
 
 			// Primitive (Value) Types:
+
+			// صحیح
 
 			// sbyte
 			// short
@@ -151,6 +149,8 @@ namespace LEARNING_CSHARP
 			// ushort
 			// uint
 			// ulong
+
+			// اعشاری
 
 			// float
 			// double
@@ -173,11 +173,17 @@ namespace LEARNING_CSHARP
 			// **********
 			// My First Number:
 
+			// دو مورد ذیل در سی‌شارپ خیلی استفاده می‌شود
+
 			// Pascal Case	=> MyFirstNumber
 			// Camel Case	=> myFirstNumber
 
+			// دو مورد ذیل، در سی‌شارپ چندان کاربردی ندارد
+
 			// Upper Case	=> FIRST_NUMBER
 			// Snake Case	=> my_first_number
+
+			// دو مورد ذیل در برنامه‌نویسی، استفاده نمی‌شود
 
 			// Kebab Case	=> my-first-number
 			// Title Case	=> My First Number
@@ -185,7 +191,7 @@ namespace LEARNING_CSHARP
 
 			// **********
 			// استاندارد = تاکتیک
-
+			// **********
 			// تمامی متغیرهایی که تعریف می‌کنیم باید با معنی باشند
 			// و نباید از مخفف در نام آنها استفاده کنیم
 			// و معنی و دیکته آنها باید درست و با دقت انتخاب و نوشته شود
@@ -194,7 +200,7 @@ namespace LEARNING_CSHARP
 
 			// **********
 			// استاندارد قدیم
-
+			// **********
 			//string strFullName;	// Type Prefix: str + Pascal Case
 
 			//long lngFirstNumber;	// Type Prefix: lng + Pascal Case
@@ -202,7 +208,7 @@ namespace LEARNING_CSHARP
 
 			// **********
 			// استاندارد جدید
-
+			// **********
 			//string fullName;			// Camel Case
 			//string fullNameString;	// Camel Case + Type Name
 
@@ -248,12 +254,14 @@ namespace LEARNING_CSHARP
 			//long Y = 20;
 
 			// Implicit = ضمنی = تلویحی
-			//Y = X; // Implicit Casting!
+			//Y = X;
 
 			// (2)
 
 			// X = Y; // Compiler Error!
-			//X = (int)Y; // Explicit Casting! به صراحت
+
+			// Explicit Casting! به صراحت
+			//X = (int)Y;
 
 			// (3)
 
@@ -292,6 +300,12 @@ namespace LEARNING_CSHARP
 
 			// Infinitive Loop
 			//while (1 == 1)
+			//{
+			//	System.Console.WriteLine("Dad!");
+			//}
+
+			// Infinitive Loop
+			//while (true)
 			//{
 			//	System.Console.WriteLine("Dad!");
 			//}
@@ -336,7 +350,7 @@ namespace LEARNING_CSHARP
 
 			// **********
 			//bool resultOfF = f();
-			//bool resultOfG = g(); 
+			//bool resultOfG = g();
 
 			//if(resultOfF && resultOfG)
 			//{
@@ -453,8 +467,12 @@ namespace LEARNING_CSHARP
 			// Wrong Usage!
 			//string fullName = firstName + lastName;
 
+			// fullName => "DariushTasdighi"
+
 			// Wrong Usage!
 			//string fullName = firstName + "" + lastName;
+
+			// fullName => "DariushTasdighi"
 
 			//string fullName = firstName + " " + lastName;
 
@@ -476,6 +494,8 @@ namespace LEARNING_CSHARP
 			// **********
 			//string str1 = "Some Text";
 
+			//string str2 = 10 + str1; // قبلا خطا می‌داد
+
 			//string str2 = (10).ToString() + str1; // قبلا مجبور بودیم
 
 			//string str2 = 10 + str1; // در نسخه‌های جدید مشکلی ندارد
@@ -492,28 +512,31 @@ namespace LEARNING_CSHARP
 			//System.Console.Write("What is your last name: ");
 			//string lastName = System.Console.ReadLine();
 
-			//// Wrong Usage!
-			////string fullName = firstName + lastName;
+			// Wrong Usage!
+			//string fullName = firstName + lastName;
 
-			//// Wrong Usage!
-			////string fullName = firstName + "" + lastName;
+			// Wrong Usage!
+			//string fullName = firstName + "" + lastName;
 
-			////string fullName = firstName + " " + lastName;
+			//string fullName = firstName + " " + lastName;
 
-			////string fullName = string.Format("{0} {1}", firstName, lastName);
+			//string fullName = string.Format("{0} {1}", firstName, lastName);
 
 			//string fullName =
 			//	string.Format("Full Name: {0} {1}", firstName, lastName);
 
-			////string fullName =
-			////	$"{firstName} {lastName}";
+			//string fullName = string.Format
+			//	("Full Name: {0} {1}", firstName, lastName);
 
-			//// Wrong Usage!
-			////string fullName =
-			////	"{firstName} {lastName}";
+			//string fullName =
+			//	$"{firstName} {lastName}";
 
-			//// Wrong Usage!
-			////System.Console.WriteLine("fullName");
+			// Wrong Usage!
+			//string fullName =
+			//	"{firstName} {lastName}";
+
+			// Wrong Usage!
+			//System.Console.WriteLine("fullName");
 
 			//System.Console.WriteLine(fullName);
 			// **********
@@ -607,7 +630,7 @@ namespace LEARNING_CSHARP
 			//for (int index = 1; index <= count; index++)
 			//{
 			//	string message =
-			//		$"[{ index }]: Hello, World!";
+			//		$"[{index}]: Hello, World!";
 
 			//	System.Console.WriteLine(message);
 			//}
@@ -618,12 +641,14 @@ namespace LEARNING_CSHARP
 			// **********
 			//System.Console.Write("How many times do you want to write Hello, World!: ");
 
+			// کسر ده نمره
 			//int count =
-			//	System.Convert.ToInt32(System.Console.ReadLine()); // کسر ده نمره
+			//	System.Convert.ToInt32(System.Console.ReadLine());
 
 			//for (int index = 1; index <= count; index++)
 			//{
-			//	System.Console.WriteLine($"[{ index }]: Hello, World!"); // کسر ده نمره
+			// کسر ده نمره
+			//	System.Console.WriteLine($"[{ index }]: Hello, World!");
 			//}
 			// **********
 
@@ -660,6 +685,7 @@ namespace LEARNING_CSHARP
 			//	// **********
 
 			//	// **********
+			//	// کسر ده نمره
 			//	//sum +=
 			//	//	System.Convert.ToInt32(System.Console.ReadLine());
 			//	// **********
@@ -711,6 +737,39 @@ namespace LEARNING_CSHARP
 			// **********
 			// **********
 
+			// **********
+			// ما سه نوع خطا داریم
+			// **********
+
+			// **********
+			// نوع اول: Compile (Syntax) Error!
+			// **********
+			//System.Console.WriteLine("Hello, World!")
+			// **********
+
+			// **********
+			// نوع دوم: Runtime Error!
+			// **********
+			//int a = 5;
+			//int b = 0;
+			//double c = a / b;
+			// **********
+
+			// **********
+			// نوع سوم: Logic Error!
+			// **********
+			// برنامه‌ای بنویسید که اعداد از یک تا پنج را چاپ نماید
+			// **********
+			//int counter = 1;
+
+			//while (counter < 5)
+			//{
+			//	System.Console.WriteLine(counter);
+
+			//	counter++;
+			//}
+			// **********
+
 			// Debug: Breakpoint (F9), Trace (F10, F11), Right Click on Variable -> Add Watch
 
 			// Documentation
@@ -745,15 +804,36 @@ namespace LEARNING_CSHARP
 			// **********
 
 			// **********
+			// چند زبان برنامه‌نویسی دات‌نتی داریم؟
+			// 65+
+
+			// چند زبان برنامه‌نویسی شیءگرا داریم؟
+			// 200+
+
+			// چند زبان برنامه‌نویسی شیءگرای استاندارد داریم؟
+			// IEEE
+			// Java, C#
+			// **********
+
+			// **********
 			// کار می‌کند function فقط در داخل goto دستور
 
 			//// ...
+			//// ...
+			//// ...
 			//if(1 == 1)
 			//{
+			//	...
+			//	...
+			//	...
 			//	goto SomeLable;
 			//}
 			//// ...
+			//// ...
+			//// ...
 			//SomeLable:
+			//// ...
+			//// ...
 			//// ...
 			// **********
 
@@ -959,9 +1039,11 @@ namespace LEARNING_CSHARP
 			//if(1 == 1)
 			//{
 			//	...
-
+			//	...
+			//	...
 			//	int index = 1;
-
+			//	...
+			//	...
 			//	...
 			//}
 			// **********
@@ -969,60 +1051,99 @@ namespace LEARNING_CSHARP
 			// **********
 			//if(1 == 1)
 			//{
-			//	int index;
-
 			//	...
-
+			//	...
+			//	...
+			//	int index;
+			//	...
+			//	...
+			//	...
 			//	int index; // Compile Error!
+			//	...
+			//	...
+			//	...
 			//}
 			// **********
 
 			// **********
 			//if(1 == 1)
 			//{
-			//	int index;
-
 			//	...
-
+			//	...
+			//	...
+			//	int index;
+			//	...
+			//	...
+			//	...
 			//	float index; // Compile Error!
-			//}
-			// **********
-
-			// **********
-			//if(1 == 1)
-			//{
 			//	...
-
-			//	int index;
-
 			//	...
-			//}
-
-			//	...
-
-			//if(1 == 1)
-			//{
-			//	...
-
-			//	int index;
-
 			//	...
 			//}
 			// **********
 
 			// **********
+			//...
+			//...
+			//...
 			//if(1 == 1)
 			//{
+			//	...
+			//	...
+			//	...
 			//	int index;
+			//	...
+			//	...
+			//	...
+			//}
+			//...
+			//...
+			//...
+			//if(1 == 1)
+			//{
+			//	...
+			//	...
+			//	...
+			//	int index;
+			//	...
+			//	...
+			//	...
+			//}
+			//...
+			//...
+			//...
+			// **********
 
+			// **********
+			//...
+			//...
+			//...
+			//if(1 == 1)
+			//{
+			//	...
+			//	...
+			//	...
+			//	int index;
+			//	...
+			//	...
+			//	...
 			//	if(1 == 1)
 			//	{
-
+			//		...
+			//		...
+			//		...
 			//		int index; // Compile Error!
-
+			//		...
+			//		...
+			//		...
 			//	}
-
+			//	...
+			//	...
+			//	...
 			//}
+			//...
+			//...
+			//...
 			// **********
 
 			// **********
@@ -1044,27 +1165,24 @@ namespace LEARNING_CSHARP
 			// از آخرین (درونی‌ترین) حلقه‌ای که در داخل آن قرار دارد خارج می‌شود
 
 			//...
-			//(A)
-			//while (1 == 1)
+			//(A) while (1 == 1)
 			//{
 			//	...
-			//	(B)
-			//	while (1 == 1)
+			//	(B) while (1 == 1)
 			//	{
 			//		...
-			//		(C)
-			//		if (1 == 1)
+			//		(C) if (1 == 1)
 			//		{
 			//			...
 			//			break;
 			//		}
-			//		(D)
+			//		(D) ...
 			//		...
 			//	}
-			//	(E)
+			//	(E) ...
 			//	...
 			//}
-			//(F)
+			//(F) ...
 			//...
 			// **********
 
@@ -1081,26 +1199,26 @@ namespace LEARNING_CSHARP
 			// برخورد نماید
 			// به ابتدای آخرین (درونی‌ترین) حلقه‌ای که در داخل آن قرار دارد وارد شده و شرط آنرا تست می‌کند
 
-			int index = 1;
+			//int index = 1;
 
-			while (index <= 10)
-			{
-				if (index == 3)
-				{
-					index = 6;
+			//while (index <= 10)
+			//{
+			//	if (index == 3)
+			//	{
+			//		index = 6;
 
-					continue;
-				}
+			//		continue;
+			//	}
 
-				if (index == 8)
-				{
-					break;
-				}
+			//	if (index == 8)
+			//	{
+			//		break;
+			//	}
 
-				System.Console.WriteLine(index);
+			//	System.Console.WriteLine(index);
 
-				index++;
-			}
+			//	index++;
+			//}
 			// **********
 
 			// **********
